@@ -1,0 +1,32 @@
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin transform($transform...) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    transform:         $transform;
+}
+
+@mixin transform($transformY...) {
+    -moz-transform:    $transformY;
+    -o-transform:      $transformY;
+    -webkit-transform: $transformY;
+    transform:         $transformY;
+}
+
+@mixin flex($flex) {
+    display     : $flex;
+    -ms-display : $flex;
+}
+
+@mixin gradient ($deg, $color1, $color2) {
+    background-image: -webkit-linear-gradient( $deg, $color1 0%, $color2 100%);
+    background-image: -moz-linear-gradient( $deg, $color1 0%, $color2 100%);
+    background-image: -ms-linear-gradient( $deg, $color1 0%, $color2 100%);
+    background-image: linear-gradient( $deg, $color1 0%, $color2 100%);
+}

@@ -1,0 +1,145 @@
+.processors {
+    transition-duration: .9s;
+    &:hover {
+        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    }
+    &__image {
+        padding: 53px 77px 54px 77px;
+        max-width: 90%;
+        @include media-breakpoint-down(md) {
+            padding: 28px 53px 40px 35px;
+        }
+    }
+}
+
+//2nd payment process
+.process {
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    background: #FAFBFF;
+    position: relative;
+    width: 100%;
+    height: 620px;
+    padding-bottom: 100px;
+    &__left {
+        padding-top: 80px;
+        color: #99ABB8;
+    }
+    &__content {
+        // padding-top: 100px;
+        // margin-bottom: 100px;
+    }
+    &__title {
+        color: $dark;
+        padding-bottom: 30px;
+        font-family: $text-font;
+        font-weight: 900;
+    }
+    &__text {
+        font-family: $text-font;
+        color: rgb(63, 56, 56);
+        padding-bottom: 20px;
+    }
+    &__icon {
+        color: #3867CF !important;
+        display: table;
+        background: $white-color;
+        transform: skew(-15deg);
+        border-radius: 0px 100px 50px 0px !important;
+        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        font-size: 30px;
+        text-align: center;
+        line-height: 80px;
+        margin-top: 100px;
+        width: 80px;
+        height: 80px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: $white-color;
+            transform: skew(-1deg);
+            border-radius: 0px 100px 50px 0px !important;
+            -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+            -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+            box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+            width: 80px;
+            height: 80px;
+            z-index: -1;
+        }
+    }
+    &__content {
+        padding-left: 182px;
+        margin-bottom: 100px;
+    }
+    &__right {
+        position: relative;
+        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        // right: -90px;
+        border-radius: 300px 0px 0px 300px !important;
+        width: auto;
+        height: 619px;
+        background: $white-color;
+        padding-top: 0;
+    }
+    &__single {
+        position: absolute;
+        // width: 100px;
+        height: auto;
+        padding: 15px;
+        background: #ffffff;
+        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        transition: 0.3s ease-in-out all;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__img {
+        // width: 100px;
+        max-width: 100px;
+        // height: 70px;
+    }
+    &--img1 {
+        top: 70px;
+        left: 200px;
+    }
+    &--img3 {
+        top: 70px;
+        left: 400px;
+    }
+    &--img4 {
+        top: 210px;
+        left: 50px;
+    }
+    &--img5 {
+        top: 250px;
+        left: 300px;
+    }
+    // &--img6 {
+    //     top: 190px;
+    //     left: 500px;
+    // }
+    &--img7 {
+        top: 390px;
+        left: 100px;
+    }
+    &--img8 {
+        top: 450px;
+        left: 350px;
+    }
+    &--img9 {
+        top: 285px;
+        left: 500px;
+    }
+}

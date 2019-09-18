@@ -1,0 +1,27 @@
+.personal {
+    background: #F6F6F6;
+    padding-top: 100px;
+    &__title {
+        margin-bottom: 25px;
+        color: $dark;
+        @include media-breakpoint-down(md) {
+            font-size: 27px;
+        }
+    }
+    &__text {
+        color: rgb(51, 44, 44);
+        @include media-breakpoint-down(md) {
+            font-size: 15px;
+        }
+    }
+    &__image {
+        @include media-breakpoint-down(md) {
+            width: 450px;
+            height: 100%;
+        }
+    }
+    &__content {
+        // animation: mymoves 3s ease-in-out;
+        // z-index: 100;
+    }
+}

@@ -1,0 +1,103 @@
+.hexagon-feature {
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    // margin-bottom: 50px;
+}
+
+.hexagon {
+    position: relative;
+    width: 180px;
+    height: 103.92px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    border-radius: 10px;
+    &:hover {
+        .hexagon__img {
+            transform: scale(1.5);
+        }
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        transition: 0.3s ease-in-out all;
+        &--one {
+            width: 75px;
+            height: 75px;
+        }
+        &--two {
+            width: 85px;
+            height: 85px;
+        }
+        &--four {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        margin: 50px auto;
+        width: 140px;
+        height: 80.83px;
+    }
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 127.28px;
+    height: 127.28px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 26.3604px;
+    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    border-radius: 10px;
+    @include media-breakpoint-down(md) {
+        width: 98.99px;
+        height: 98.99px;
+        left: 20.5025px;
+    }
+}
+
+.hexagon:before {
+    top: -63.6396px;
+    @include media-breakpoint-down(md) {
+        top: -49.4975px;
+    }
+}
+
+.hexagon:after {
+    bottom: -63.6396px;
+    @include media-breakpoint-down(md) {
+        bottom: -49.4975px;
+    }
+}
+
+
+/*cover up extra shadows*/
+
+.hexagon span {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 180px;
+    height: 103.9230px;
+    z-index: 2;
+    background: inherit;
+    border-radius: 10px;
+    @include media-breakpoint-down(md) {
+        width: 140px;
+        height: 80.8290px;
+    }
+}

@@ -1,0 +1,24 @@
+.unique {
+    &--block {
+        margin-bottom: 30px;
+    }
+    &--block2 {
+        margin-bottom: 30px;
+    }
+    &__image {
+        width: 100px;
+        height: 100px;
+    }
+    &__title {
+        color: $white-color;
+        line-height: 28px;
+    }
+    &__text {
+        color: $white-color;
+        font-size: 13px;
+    }
+}
+
+// .block {
+//     background: $block-color;
+// }

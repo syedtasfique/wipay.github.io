@@ -1,0 +1,32 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: all 2s;
+    // background: $primary-color;
+}
+
+.navbar-brand img {
+    width: 140px;
+    height: auto;
+}
+
+.navbar ul li a {
+    padding: 15px;
+    padding-right: 36px !important;
+    color: $white-color;
+    font-family: $text-font;
+    text-transform: uppercase;
+    font-size: 12px;
+    &:hover {
+        color: $yellow-color;
+    }
+}
+
+.scroll-nav {
+    position: fixed;
+    background: $primary-color;
+}
+
+@media screen and (max-width: 992px) {}

@@ -1,0 +1,48 @@
+.banner {
+    background: url('../../img/banner/banner-new2.jpg');
+    height: 937px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+        height: 700px;
+    }
+    &__title {
+        color: $white-color;
+        margin-bottom: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 27px;
+        }
+    }
+    &__desc {
+        color: $white-color;
+        margin-bottom: 10px;
+        @include media-breakpoint-down(md) {
+            word-spacing: 0;
+        }
+    }
+    &__buttons {
+        position: relative;
+    }
+    &__right-image {
+        animation: mymove 2s ease-in-out;
+        z-index: 100;
+        @include media-breakpoint-down(md) {
+            width: 100%
+        }
+    }
+}
+
+@keyframes mymove {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.full-screen {
+    height: 900px;
+}

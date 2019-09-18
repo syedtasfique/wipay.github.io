@@ -1,0 +1,13 @@
+.element {
+    background-attachment: fixed;
+    background-image: url('../../img/mac.png');
+    text-align: center;
+    &__title {
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+    }
+    &__text {
+        color: #ffffff;
+    }
+}
