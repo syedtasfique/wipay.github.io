@@ -1,16 +1,18 @@
 .payment {
     &__title {
-        margin-bottom: 25px;
         text-transform: capitalize;
+        font-size: 42px;
         @include media-breakpoint-down(md) {
             font-size: 27px;
         }
     }
     &__text {
-        margin-bottom: 10px;
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+        }
     }
 }
 
 .platform-area {
-    background: #F6F6F6;
+    background: $background-color;
 }

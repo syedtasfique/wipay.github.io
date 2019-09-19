@@ -9,15 +9,15 @@
     position: relative;
     width: 180px;
     height: 103.92px;
-    background-color: #ffffff;
+    background-color: $white-color;
     margin: 40px auto;
-    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
     border-radius: 10px;
     &:hover {
         .hexagon__img {
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
     }
     &__img {
@@ -57,9 +57,9 @@
     transform: scaleY(0.5774) rotate(-45deg);
     background-color: inherit;
     left: 26.3604px;
-    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
     border-radius: 10px;
     @include media-breakpoint-down(md) {
         width: 98.99px;

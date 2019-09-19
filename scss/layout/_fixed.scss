@@ -3,11 +3,13 @@
     background-image: url('../../img/mac.png');
     text-align: center;
     &__title {
-        color: #ffffff;
+        color: $white-color;
         text-transform: capitalize;
-        margin-bottom: 25px;
     }
     &__text {
-        color: #ffffff;
+        color: $white-color;
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+        }
     }
 }

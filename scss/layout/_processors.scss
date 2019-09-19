@@ -1,9 +1,15 @@
+// .process-area {
+//     background: $background-color;
+// }
 .processors {
     transition-duration: .9s;
+    // -webkit-box-shadow: 7px 7px 100px 27px rgba(206, 223, 219, 0.43);
+    // -moz-box-shadow: 7px 7px 100px 27px rgba(206, 223, 219, 0.43);
+    // box-shadow: 7px 7px 100px 27px rgba(206, 223, 219, 0.43);
     &:hover {
-        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
     }
     &__image {
         padding: 53px 77px 54px 77px;
@@ -17,14 +23,14 @@
 //2nd payment process
 .process {
     // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-    background: #FAFBFF;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    // background: #FAFBFF;
     position: relative;
     width: 100%;
-    height: 620px;
-    padding-bottom: 100px;
+    // height: 721px;
+    // padding-bottom: 100px;
     &__left {
         padding-top: 80px;
         color: #99ABB8;
@@ -45,14 +51,14 @@
         padding-bottom: 20px;
     }
     &__icon {
-        color: #3867CF !important;
+        color: $primary-color3 !important;
         display: table;
         background: $white-color;
         transform: skew(-15deg);
         border-radius: 0px 100px 50px 0px !important;
-        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
         font-size: 30px;
         text-align: center;
         line-height: 80px;
@@ -67,9 +73,9 @@
             background: $white-color;
             transform: skew(-1deg);
             border-radius: 0px 100px 50px 0px !important;
-            -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-            -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-            box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+            -webkit-box-shadow: $box-shadow;
+            -moz-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
             width: 80px;
             height: 80px;
             z-index: -1;
@@ -81,9 +87,9 @@
     }
     &__right {
         position: relative;
-        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
         // right: -90px;
         border-radius: 300px 0px 0px 300px !important;
         width: auto;
@@ -96,10 +102,10 @@
         // width: 100px;
         height: auto;
         padding: 15px;
-        background: #ffffff;
-        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        background: $white-color;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
         transition: 0.3s ease-in-out all;
         &:hover {
             transform: scale(1.2);

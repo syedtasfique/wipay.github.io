@@ -1,6 +1,5 @@
 .single {
     position: relative;
-    font-size: 10px;
     text-align: center;
     &--middle {
         margin-top: 40px;
@@ -22,12 +21,12 @@
         transition: 0.3s ease-in-out all;
         // padding: 42px 57px;
         // margin-bottom: 20px;
-        color: #FFB507;
+        color: #F5B52F !important;
         border-radius: 50%;
         // box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
-        -webkit-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        -moz-box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
-        box-shadow: 6px 10px 23px -4px rgba(196, 230, 223, 0.96);
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
         @include media-breakpoint-down(md) {
             width: 110px;
             height: 110px;
@@ -39,18 +38,18 @@
         text-transform: capitalize;
         font-size: 18px;
         color: $dark;
-        margin-top: 50px;
-        margin-bottom: 20px;
         @include media-breakpoint-down(md) {
             text-transform: capitalize;
             font-size: 18px;
             color: $dark;
-            margin-top: 66px;
-            margin-bottom: 30px;
+            // margin-top: 66px;
+            // margin-bottom: 30px;
         }
     }
     &__text {
-        font-size: 15px;
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+        }
     }
 }
 
@@ -61,7 +60,7 @@
         top: 87px;
         right: -123px;
         width: 65%;
-        border: 1px dotted #EEEEF0;
+        border: 1px dotted $border-color;
         position: absolute;
         transform: rotate(16deg);
         @include media-breakpoint-down(md) {
@@ -79,7 +78,7 @@
         top: 53px;
         right: -131px;
         width: 68%;
-        border: 1px dotted #EEEEF0;
+        border: 1px dotted $border-color;
         position: absolute;
         transform: rotate(-22deg);
         @include media-breakpoint-down(md) {
@@ -96,7 +95,7 @@
     //     top: 82px;
     //     right: -247px;
     //     width: 115%;
-    //     border: 1px dotted #EEEEF0;
+    //     border: 1px dotted $border-color;
     //     position: absolute;
     //     transform: rotate(16deg);
     // }

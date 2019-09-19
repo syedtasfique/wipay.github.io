@@ -1,7 +1,8 @@
-.choose {
+.choose-area {
+    background: $background-color;
     &__block {
         display: flex;
-        border: 1px solid #A3E6ED;
+        border: 1px solid $border-color;
         padding: 25px 15px;
         margin-bottom: 30px;
         transition: all 0.5s ease;
@@ -18,8 +19,13 @@
     }
     &__icon {
         padding: 0px 20px 0px 20px;
-        color: #2ABBCA;
+        color: $primary-color2;
         font-size: 30px !important;
+    }
+    &__title {
+        @include media-breakpoint-down(md) {
+            font-size: 15px;
+        }
     }
 }
 
