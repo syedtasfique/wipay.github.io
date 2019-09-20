@@ -12,10 +12,13 @@
     <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="vendor/css/animate.min.css" />
+    <link rel="stylesheet" href="vendor/css/aos-animation.css" />
+    <link rel="stylesheet" href="vendor/css/liquid.min.css" />
 
     <!-- font link -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="dist/font/liquid-icon.woff" rel="stylesheet">
 </head>
 
 <body>
@@ -56,22 +59,26 @@
             <div class="row align-items-center full-screen">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="banner-area__left">
-                        <h4 class="banner-area__title mb-4"> Simple
+                        <!-- <h4 class="banner-area__title animated fadeInUp mb-4"> Simple
                             <span class="txt-rotate " data-period="2000" data-rotate='[ "Money Transfer" ]'></span> <span class="second1"><br> To Your Love Ones</span>
+                        </h4> -->
+                        <h4 class="banner-area__title animated1 fadeInUp">
+                            Simple Money Transfer <br>
                         </h4>
+                        <h4 class="banner-area__title animated2 fadeInUp mb-4">To Your Love Ones</h4>
 
-                        <p class="banner-area__desc mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        <p class="banner-area__desc mb-5 animated3 fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         </p>
                         <div>
-                            <button type="button" class="btn btn-lg btn-regular btn-regular--banner-area mr-4">Get Started
+                            <button type="button" class=" animated4 fadeInUp btn btn-lg btn-regular btn-regular--banner-area mr-4">Get Started
                                 Now</button>
-                            <button type="button" class="btn btn-lg btn-regular btn-regular--banner-area">View Live
+                            <button type="button" class=" animated4 fadeInUp btn btn-lg btn-regular btn-regular--banner-area">View Live
                                 Example</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 banner-area__right-image">
-                    <img class="img-fluid" src="img/banner/banner-img.png" alt="">
+                    <img class="img-fluid" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="300" data-aos-easing="ease" data-aos-once="true" data-aos="fade-up-left" src="img/banner/banner-img.png" alt="">
                 </div>
             </div>
         </div>
@@ -85,7 +92,12 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 single">
                     <!-- <div class="single__overlap">
                         </div> -->
-                    <span class="single__icon single__icon--left"><i class="fa fa-credit-card"></i></span>
+                    <span class="single__icon single__icon--left"> 
+                            <span class="iconbox-icon-container">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><path stroke-width="2" stroke-miterlimit="10" d="M32,47L63,47L63,5L1,5L1,47L18,47L18,59Z"></path> <path stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23,26L30,33L 43,20"></path> </svg>
+                            </span>
+                    </span>
+                    <!-- <span class="single__icon single__icon--left"><i class="fa fa-credit-card"></i></span> -->
                     <div class="single__area">
                         <h3 class="single__title mt-5 mb-4">Simple to Integrate</h3>
                         <p class="single__text mb-5">Sign up and discover a vast system for your payment and discover a vast system for your payment and discover a vast</p>
@@ -93,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 single">
-                    <span class="single__icon single__icon--middle "><i class="fa fa-usd"></i></span>
+                    <span class="single__icon single__icon--middle "><i class="icon-et-bargraph"></i></span>
                     <div class="single__area">
                         <h3 class="single__title mt-5 mb-4">multiple wallet</h3>
                         <p class="single__text mb-5">Make some deposit from any currency you want or even and discover a vast system discover for your payment and discover
@@ -127,27 +139,27 @@
                     <button type="button" class="btn btn-lg btn-regular btn-regular--pay-btn">marchent</button>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/payment/hero.png" class="img-fluid" alt="">
+                    <img src="img/payment/hero.png" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-12 hexagon-feature align-items-center">
+                <div class="col-md-6 hexagon-feature align-items-center mt-4">
                     <div class="row w-100">
                         <div class="col-lg-3 col-md-3">
-                            <div class="hexagon ">
-                                <span><img src="img/hexagon/wi_Wallet.png" alt="" class="img-fluid hexagon__img hexagon__img--one"></span>
+                            <div class="hexagon" data-aos="fade-up">
+                                <span><img src="img/hexagon/wi_Wallet.png"  alt="" class="img-fluid hexagon__img hexagon__img--one"></span>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <div class="hexagon ">
+                            <div class="hexagon" data-aos="fade-up" data-aos-delay="200">
                                 <span><img src="img/hexagon/wi_Chain_icon.png" alt="" class="img-fluid hexagon__img hexagon__img--two"></span>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <div class="hexagon ">
+                            <div class="hexagon" data-aos="fade-up" data-aos-delay="300">
                                 <span><img src="img/hexagon/wi_Exchange .png" alt="" class="img-fluid hexagon__img hexagon__img--three"></span>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <div class="hexagon ">
+                            <div class="hexagon" data-aos="fade-up" data-aos-delay="400">
                                 <span><img src="img/hexagon/wi_Token_logo.png" alt="" class="img-fluid hexagon__img hexagon__img--four"></span>
                             </div>
                         </div>
@@ -619,8 +631,12 @@
     <script src="vendor/js/jquery.js "></script>
     <script src="vendor/js/popper.min.js "></script>
     <script src="vendor/js/bootstrap.min.js "></script>
+    <script src="vendor/js/aos.js"></script>
     <script src="vendor/js/wow.js"></script>
     <script src="dist/js/main.js "></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@
         position: relative;
     }
     &__right-image {
-        animation: mymove 2s ease-in-out;
+        // animation: mymove 2s ease-in-out;
         z-index: 100;
         @include media-breakpoint-down(md) {
             width: 100%
@@ -35,103 +35,172 @@
     }
 }
 
-@keyframes mymove {
-    from {
-        top: -200px;
-    }
-    to {
-        top: 0px;
-    }
-}
-
-.full-screen {
-    height: 900px;
-}
-
-.center {
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-span {
-    font-family: $text-font;
-    font-size: 42px;
-    font-weight: 400;
-    @include media-breakpoint-down(md) {
-        font-size: 25px;
-    }
-    &.type {
-        margin: 0 auto;
-        width: 200px;
-        margin-top: 100px;
-        &::after {
-            content: '|';
-            display: inline;
-            animation: blink 0.7s infinite;
+svg {
+    transition: fill 0.3s, stroke 0.3s;
+    &__hover {
+         :not(svg) {
+            transform-origin: 0px 0px;
         }
     }
 }
 
-
-/*Removes cursor that comes with typed.js*/
-
-.typed-cursor {
-    opacity: 0;
-    display: none;
-}
-
-.second1 {
-    font-size: 30px;
-    @include media-breakpoint-down(md) {
-        font-size: 16px;
-    }
-}
-
-
-/*Custom cursor animation*/
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-// .btns {
-// 	display: block;
-// 	width: 400px;
-// 	margin: 0;
-// 	padding: 30px 0 0 30px;
+// @keyframes mymove {
+//     from {
+//         top: -200px;
+//     }
+//     to {
+//         top: 0px;
+//     }
 // }
+.full-screen {
+    height: 900px;
+}
+
+// .center {
+//     height: 400px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// span {
+//     font-family: $text-font;
+//     font-size: 42px;
+//     font-weight: 400;
+//     @include media-breakpoint-down(md) {
+//         font-size: 25px;
+//     }
+//     &.type {
+//         margin: 0 auto;
+//         width: 200px;
+//         margin-top: 100px;
+//         &::after {
+//             content: '|';
+//             display: inline;
+//             animation: blink 0.7s infinite;
+//         }
+//     }
+// }
+// /*Removes cursor that comes with typed.js*/
+// .typed-cursor {
+//     opacity: 0;
+//     display: none;
+// }
+// .second1 {
+//     font-size: 30px;
+//     @include media-breakpoint-down(md) {
+//         font-size: 16px;
+//     }
+// }
+// /*Custom cursor animation*/
+// @keyframes blink {
+//     0% {
+//         opacity: 1;
+//     }
+//     50% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+// @-webkit-keyframes blink {
+//     0% {
+//         opacity: 1;
+//     }
+//     50% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+// @-moz-keyframes blink {
+//     0% {
+//         opacity: 1;
+//     }
+//     50% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+//animation fadeInUp
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animated1 {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.animated2 {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.animated3 {
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+.animated4 {
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+//animation fadeInRight
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
