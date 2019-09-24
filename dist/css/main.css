@@ -9759,7 +9759,8 @@ th {
 }
 
 .btn-regular {
-  background: linear-gradient(to right, #3867CF 0%, #2DB8C9 51%, #3867CF 100%);
+  background: linear-gradient(to right, #25CAFD 0%, #5561FF 51%, #25CAFD 100%);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   font-size: 11px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -9770,7 +9771,7 @@ th {
   text-align: center;
   border: none;
   background-size: 200%;
-  border-radius: 50px;
+  border-radius: 20px;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -10209,7 +10210,7 @@ th {
 
 .scroll-nav {
   position: fixed;
-  background: #039BE5;
+  background: linear-gradient(to right, #6D2BFF 0%, #2BBCFD 51%, #6D2BFF 100%);
   -webkit-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
   -moz-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
   box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
@@ -10360,7 +10361,7 @@ svg__hover :not(svg) {
 }
 
 .platform-area {
-  background: #F6F6F6;
+  background: #FFFFFF;
 }
 
 @keyframes placeHolderShimmer {
@@ -10385,6 +10386,16 @@ svg__hover :not(svg) {
   height: 338px;
   position: relative;
   overflow: hidden;
+}
+
+.platform_image {
+  padding: 25px 20px;
+  background: #f3f3f3;
+}
+
+.right-img {
+  position: absolute;
+  right: 0;
 }
 
 .single {
@@ -10463,9 +10474,9 @@ svg__hover :not(svg) {
 .single:nth-child(2)::after {
   content: "";
   height: 1px;
-  top: 53px;
-  right: -131px;
-  width: 68%;
+  top: 55px;
+  right: -142px;
+  width: 71%;
   border: 1px dotted #EEEEF0;
   position: absolute;
   transform: rotate(-22deg);
@@ -10703,6 +10714,7 @@ svg__hover :not(svg) {
 }
 
 .transection-area {
+  background-repeat: no-repeat;
   text-align: center;
   padding-bottom: 100px;
   position: relative;
@@ -10752,6 +10764,12 @@ svg__hover :not(svg) {
   .transection-area__shape1 {
     left: -269px;
   }
+}
+.transection-area__left-img {
+  position: absolute;
+  width: 394px;
+  left: 0;
+  top: -540px;
 }
 .transection-area__shape2 {
   position: absolute;
@@ -10832,9 +10850,6 @@ svg__hover :not(svg) {
   text-align: center;
 }
 .unique--block {
-  margin-bottom: 30px;
-}
-.unique--block2 {
   margin-bottom: 30px;
 }
 .unique__image {

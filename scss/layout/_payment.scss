@@ -14,22 +14,21 @@
 }
 
 .platform-area {
-    background: $background-color;
+    background: $white-color;
 }
 
-@keyframes placeHolderShimmer{
-    0%{
+@keyframes placeHolderShimmer {
+    0% {
         background-position: -468px 0
     }
-    100%{
+    100% {
         background-position: 468px 0
     }
 }
 
-
 .linear-background {
-  height: 300;
-  width: 300;
+    height: 300;
+    width: 300;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -46,3 +45,12 @@
 // .image{
 //     opacity: 0;
 // }
+.platform_image {
+    padding: 25px 20px;
+    background: rgb(243, 243, 243);
+}
+
+.right-img {
+    position: absolute;
+    right: 0;
+}
