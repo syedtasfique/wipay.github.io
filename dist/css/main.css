@@ -9824,13 +9824,15 @@ th {
 }
 
 .unique {
-  background: #039BE5;
+  background: #FFFFFF;
   font-size: 10px;
   text-align: center;
+  color: #181414;
   position: relative;
   padding: 20px 30px;
   border-radius: 45px;
   transition: all 0.5s;
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
 }
 .unique:hover {
   transform: translateY(-7px);
@@ -9844,8 +9846,6 @@ th {
   content: "";
   background: #2DB8C9;
   position: absolute;
-  top: -14px;
-  left: 38px;
   bottom: 0;
   right: 38px;
   border-radius: 20px;
@@ -10363,15 +10363,40 @@ svg__hover :not(svg) {
   background: #F6F6F6;
 }
 
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.linear-background {
+  height: 300;
+  width: 300;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 104px;
+  height: 338px;
+  position: relative;
+  overflow: hidden;
+}
+
 .single {
   position: relative;
   text-align: center;
 }
 .single--middle {
   margin-top: 40px;
+  text-align: center;
 }
-.single:hover .single__icon {
-  transform: rotate(-30deg);
+.single--right {
+  text-align: center;
 }
 .single__area {
   padding: 0px 20px;
@@ -10380,14 +10405,14 @@ svg__hover :not(svg) {
   font-size: 50px;
   display: inline-block;
   width: 150px;
+  text-align: center;
   height: 150px;
   line-height: 150px;
-  transition: 0.3s ease-in-out all;
   color: #F5B52F !important;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
 }
 @media (max-width: 991.98px) {
   .single__icon {
@@ -10463,9 +10488,9 @@ svg__hover :not(svg) {
   height: 57.74px;
   background-color: #ffffff;
   margin: 28.87px 0;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   border-radius: 5px;
 }
 .hexagon:hover .hexagon__img {
@@ -10509,9 +10534,9 @@ svg__hover :not(svg) {
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
   left: 14.6447px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   border-radius: 5px;
 }
 @media (max-width: 991.98px) {
@@ -10762,6 +10787,10 @@ svg__hover :not(svg) {
     font-size: 13px;
   }
 }
+.personal-area__image {
+  width: 445px;
+  height: 100%;
+}
 @media (max-width: 991.98px) {
   .personal-area__image {
     width: 450px;
@@ -10788,11 +10817,19 @@ svg__hover :not(svg) {
     font-size: 13px;
   }
 }
+.merchant-area__image {
+  width: 450px;
+  height: 100%;
+}
 @media (max-width: 991.98px) {
   .merchant-area__image {
     width: 450px;
     height: 100%;
   }
+}
+.unique {
+  position: relative;
+  text-align: center;
 }
 .unique--block {
   margin-bottom: 30px;
@@ -10805,12 +10842,14 @@ svg__hover :not(svg) {
   height: 100px;
 }
 .unique__title {
-  color: #FFFFFF;
+  color: #181414;
   line-height: 28px;
+  margin-top: 30px;
 }
 .unique__text {
-  color: #FFFFFF;
-  font-size: 13px;
+  color: #181414;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .choose-area {
@@ -10875,9 +10914,9 @@ svg__hover :not(svg) {
   transition-duration: 0.9s;
 }
 .processors:hover {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
 }
 .processors__image {
   padding: 53px 77px 54px 77px;
@@ -10890,9 +10929,9 @@ svg__hover :not(svg) {
 }
 
 .process {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   position: relative;
   width: 100%;
 }
@@ -10917,9 +10956,9 @@ svg__hover :not(svg) {
   background: #FFFFFF;
   transform: skew(-15deg);
   border-radius: 0px 100px 50px 0px !important;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   font-size: 30px;
   text-align: center;
   line-height: 80px;
@@ -10935,9 +10974,9 @@ svg__hover :not(svg) {
   background: #FFFFFF;
   transform: skew(-1deg);
   border-radius: 0px 100px 50px 0px !important;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   width: 80px;
   height: 80px;
   z-index: -1;
@@ -10948,9 +10987,9 @@ svg__hover :not(svg) {
 }
 .process__right {
   position: relative;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   border-radius: 300px 0px 0px 300px !important;
   width: auto;
   height: 619px;
@@ -10962,9 +11001,9 @@ svg__hover :not(svg) {
   height: auto;
   padding: 15px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   transition: 0.3s ease-in-out all;
 }
 .process__single:hover {
@@ -11107,7 +11146,7 @@ svg__hover :not(svg) {
   height: 40px;
   width: 40px;
   line-height: 40px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   text-align: center;
   border-radius: 50%;
   color: #FFFFFF;

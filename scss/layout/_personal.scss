@@ -16,6 +16,8 @@
         }
     }
     &__image {
+        width: 445px;
+        height: 100%;
         @include media-breakpoint-down(md) {
             width: 450px;
             height: 100%;

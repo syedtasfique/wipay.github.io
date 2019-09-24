@@ -78,13 +78,15 @@
 }
 
 .unique {
-    background: $primary-color;
+    background: $white-color;
     font-size: 10px;
     text-align: center;
+    color: $dark;
     position: relative;
     padding: 20px 30px;
     border-radius: 45px;
     transition: all 0.5s;
+    box-shadow: $box-shadow;
     &:hover {
         transform: translateY(-7px);
         &::before {
@@ -97,8 +99,8 @@
         content: "";
         background: $primary-color2;
         position: absolute;
-        top: -14px;
-        left: 38px;
+        // top: -14px;
+        // left: 38px;
         bottom: 0;
         right: 38px;
         border-radius: 20px;
