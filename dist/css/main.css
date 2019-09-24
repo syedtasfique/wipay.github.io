@@ -9760,7 +9760,6 @@ th {
 
 .btn-regular {
   background: linear-gradient(to right, #25CAFD 0%, #5561FF 51%, #25CAFD 100%);
-  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   font-size: 11px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -9770,8 +9769,8 @@ th {
   cursor: pointer;
   text-align: center;
   border: none;
-  background-size: 200%;
-  border-radius: 20px;
+  background-size: 200% auto;
+  border-radius: 15px;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -11013,12 +11012,16 @@ svg__hover :not(svg) {
 }
 .process__single {
   position: absolute;
+  border-width: 5px;
+  border-color: #f6f6fa;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 30px 0px rgba(55, 125, 162, 0.2);
+  box-shadow: 0px 1px 30px 0px rgba(55, 125, 162, 0.2);
+  text-align: center;
   height: auto;
   padding: 15px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
-  -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
-  box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.43);
   transition: 0.3s ease-in-out all;
 }
 .process__single:hover {
@@ -11028,32 +11031,38 @@ svg__hover :not(svg) {
   max-width: 100px;
 }
 .process--img1 {
-  top: 70px;
-  left: 200px;
+  top: 89px;
+  left: 418px;
+  padding: 10px 0px;
 }
 .process--img3 {
-  top: 70px;
-  left: 400px;
+  top: 90px;
+  left: 97px;
+  padding: 27px 5px;
 }
 .process--img4 {
-  top: 210px;
-  left: 50px;
+  top: 295px;
+  left: 32px;
+  padding: 34px 6px;
 }
 .process--img5 {
-  top: 250px;
-  left: 300px;
+  top: 262px;
+  left: 313px;
 }
 .process--img7 {
-  top: 390px;
-  left: 100px;
+  top: 488px;
+  left: 415px;
+  padding: 37px 25px;
 }
 .process--img8 {
-  top: 450px;
-  left: 350px;
+  top: 422px;
+  left: 140px;
+  padding: 55px 34px;
 }
 .process--img9 {
-  top: 285px;
-  left: 500px;
+  top: 330px;
+  left: 521px;
+  padding: 34px 9px;
 }
 
 .footer {

@@ -16,7 +16,7 @@
     // background: linear-gradient(to right, $primary-color3 0%, $primary-color2 51%, $primary-color3 100%);
     // background: #2BBBAD;
     background: linear-gradient(to right, #25CAFD 0%, #5561FF 51%, #25CAFD 100%);
-    box-shadow: $box-shadow;
+    // background: linear-gradient(to right, #0cebeb 0%, #20e3b2 51%, #0cebeb 100%);
     font-size: 11px;
     font-family: $text-font;
     text-transform: uppercase;
@@ -26,8 +26,8 @@
     cursor: pointer;
     text-align: center;
     border: none;
-    background-size: 200%;
-    border-radius: 20px;
+    background-size: 200% auto;
+    border-radius: 15px;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
