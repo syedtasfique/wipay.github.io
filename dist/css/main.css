@@ -8778,7 +8778,8 @@ svg {
     padding-top: 100px;
     margin-bottom: 30px; }
   .footer__sm-title {
-    font-weight: 100; }
+    font-weight: 100;
+    color: #ffffff; }
     @media (max-width: 991.98px) {
       .footer__sm-title {
         font-size: 16px; } }
