@@ -53,4 +53,10 @@
 .right-img {
     position: absolute;
     right: 0;
+    @include breakpoint ($min: 1200px, $max:1599px){
+        right: 0;
+        top: 1953px;
+        width: 268px;
+        height: 740px;
+    }
 }

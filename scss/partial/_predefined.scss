@@ -13,32 +13,35 @@
 }
 
 .btn-regular {
-    // background: linear-gradient(to right, $primary-color3 0%, $primary-color2 51%, $primary-color3 100%);
-    // background: #2BBBAD;
-    background: linear-gradient(to right, #25CAFD 0%, #5561FF 51%, #25CAFD 100%);
-    // background: linear-gradient(to right, #0cebeb 0%, #20e3b2 51%, #0cebeb 100%);
-    font-size: 11px;
-    font-family: $text-font;
-    text-transform: uppercase;
-    padding: 12px 35px;
-    letter-spacing: 1px;
-    color: $white-color;
-    cursor: pointer;
-    text-align: center;
-    border: none;
-    background-size: 200% auto;
-    border-radius: 15px;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    // // background: linear-gradient(to right, $primary-color3 0%, $primary-color2 51%, $primary-color3 100%);
+    // background: $primary-color2;
+    // // background: linear-gradient(to right, #25CAFD 0%, #5561FF 51%, #25CAFD 100%);
+    // // background: linear-gradient(to right, #0cebeb 0%, #20e3b2 51%, #0cebeb 100%);
+    // font-size: 11px;
+    // font-family: $text-font;
+    // text-transform: uppercase;
+    // padding: 12px 35px;
+    // letter-spacing: 1px;
+    // color: $white-color;
+    // cursor: pointer;
+    // text-align: center;
+    // border: none;
+    // background-size: 200% auto;
+    // border-radius: 15px;
+    // -moz-transition: all .2s ease-in-out;
+    // -o-transition: all .2s ease-in-out;
+    // -webkit-transition: all .2s ease-in-out;
+    // transition: all .2s ease-in-out;
     &:hover {
-        background-position: right center;
-        color: $white-color;
+    //     background-position: right center;
+    //     color: $white-color;
+    //     box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+    // -ms-transform: translateY(-3px);
+    // transform: translateY(-3px);
     }
-    &--banner {
-        text-transform: capitalize;
+    &--banner-area {
         font-size: 13px;
+
         @include media-breakpoint-down(md) {
             margin-right: 30px;
         }
@@ -116,6 +119,67 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
+.button{
+    display: flex;
+}
+
+.rkmd-btn {
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1.5rem;
+    color: #424242;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    user-select: none;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.225);
+  
+    &:hover { text-decoration: none; box-shadow: 0 4px 10px 0px rgba(0,0,0,0.225); }
+
+    &--banner{
+        margin-right:20px;
+    }
+
+    &.btn-lightBlue {
+        color: #FFF;
+        background-color: $btn_lightBlue;
+        &:hover { background-color: lighten($btn_lightBlue, 8%); }
+
+            &.disabled, &[disabled] {
+              cursor: default !important;
+              color: #9e9e9e !important;
+              box-shadow: none !important;
+            }
+          
+            &.disabled:not(.btn-flat), &[disabled]:not(.btn-flat) {
+              background-color: #cdcdcd !important;
+              &:hover { background-color: #cdcdcd !important; }
+            }
+  }
+}
+  .ripple-effect {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    z-index: 1;
+  }
+
 
 // Font Style
 .fw400 {

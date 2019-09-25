@@ -139,6 +139,11 @@
                     }
                 }
             }
+            &__icon{
+                padding: 0px 20px 0px 20px;
+                color: $primary-color2;
+                font-size: 30px !important;
+            }
             &__circle {
                 width: 50px;
                 height: 50px;
@@ -180,6 +185,12 @@
                 width: 394px;
                 left: 0;
                 top: -540px;
+                @include breakpoint ($min: 1200px, $max:1599px)  {
+                    width: 210px;
+                    left: 0;
+                    height: 600px;
+                    top: -138px;
+                }
             }
             &__shape2 {
                 position: absolute;

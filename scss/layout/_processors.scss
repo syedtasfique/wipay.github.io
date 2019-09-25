@@ -96,6 +96,9 @@
         height: 619px;
         background: $white-color;
         padding-top: 0;
+        @include breakpoint ($min: 1200px, $max:1599px){
+            height: 627px;
+        }
     }
     &__single {
         position: absolute;
@@ -122,40 +125,40 @@
     }
     &--img1 {
         top: 89px;
-        left: 418px;
-        padding: 10px 0px;
+        left: 451px;
+       
     }
     &--img3 {
-        top: 90px;
-        left: 97px;
-        padding: 27px 5px;
+        top: 54px;
+        left: 192px;
+       
     }
     &--img4 {
-        top: 295px;
-        left: 32px;
-        padding: 34px 6px;
+        top: 225px;
+        left: 82px;
+       
     }
     &--img5 {
-        top: 262px;
-        left: 313px;
+        top: 236px;
+        left: 333px;
     }
     // &--img6 {
     //     top: 190px;
     //     left: 500px;
     // }
     &--img7 {
-        top: 488px;
-        left: 415px;
-        padding: 37px 25px;
+        top: 509px;
+        left: 384px;
+       
     }
     &--img8 {
         top: 422px;
         left: 140px;
-        padding: 55px 34px;
+      
     }
     &--img9 {
-        top: 330px;
-        left: 521px;
-        padding: 34px 9px;
+        top: 366px;
+        left: 444px;
+       
     }
 }
