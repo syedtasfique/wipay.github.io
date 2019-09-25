@@ -25,7 +25,7 @@
     }
   }
   &__quick-link {
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: $white-color;
     padding-top: 100px;
     font-size: 14px;
@@ -35,11 +35,13 @@
   }
   &__link {
     list-style-type: none;
+    text-transform: capitalize;
     color: $white-color;
     padding-left: 0;
     font-size: 14px;
     & li a {
       text-decoration: none;
+      transition: all 0.3s ease-in-out;
     }
   }
 }

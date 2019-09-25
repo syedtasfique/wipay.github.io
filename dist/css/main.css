@@ -7605,6 +7605,10 @@ body {
   line-height: 28px;
   letter-spacing: 0.2px; }
 
+.main-wrapper {
+  overflow-x: hidden;
+  width: 100%; }
+
 h1,
 h2,
 h3,
@@ -7766,6 +7770,9 @@ th {
       background-color: #cdcdcd !important; }
       .rkmd-btn.btn-lightBlue.disabled:not(.btn-flat):hover, .rkmd-btn.btn-lightBlue[disabled]:not(.btn-flat):hover {
         background-color: #cdcdcd !important; }
+
+button:focus {
+  outline: none; }
 
 .ripple-effect {
   display: inline-block;
@@ -8147,7 +8154,6 @@ svg {
 
 .payment__title {
   text-transform: capitalize;
-  font-size: 42px;
   color: #222; }
   @media (max-width: 991.98px) {
     .payment__title {
@@ -8192,8 +8198,8 @@ svg {
     .right-img {
       right: 0;
       top: 1953px;
-      width: 268px;
-      height: 740px; } }
+      width: 251px;
+      height: 826px; } }
 
 .single {
   position: relative;
@@ -8643,17 +8649,21 @@ svg {
   position: relative;
   width: 100%; }
   .process__left {
-    padding-top: 80px;
+    padding-top: 60px;
     color: #99abb8; }
   .process__title {
     color: #222;
     padding-bottom: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900; }
+    font-family: "Poppins", sans-serif; }
   .process__text {
+    max-width: 600px;
     font-family: "Poppins", sans-serif;
     color: #777;
     padding-bottom: 20px; }
+  .process__span {
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: 18px; }
   .process__icon {
     color: #3867cf !important;
     display: table;
@@ -8722,7 +8732,7 @@ svg {
     @media (min-width: 1200px) and (max-width: 1599px) {
       .process--img1 {
         top: 89px;
-        left: 451px; } }
+        left: 401px; } }
   .process--img3 {
     top: 77px;
     left: 294px; }
@@ -8764,7 +8774,7 @@ svg {
     @media (min-width: 1200px) and (max-width: 1599px) {
       .process--img9 {
         top: 366px;
-        left: 444px; } }
+        left: 370px; } }
 
 .footer {
   position: relative;
@@ -8790,7 +8800,7 @@ svg {
       .footer__text {
         font-size: 12px; } }
   .footer__quick-link {
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: #ffffff;
     padding-top: 100px;
     font-size: 14px; }
@@ -8799,11 +8809,13 @@ svg {
         font-size: 5px; } }
   .footer__link {
     list-style-type: none;
+    text-transform: capitalize;
     color: #ffffff;
     padding-left: 0;
     font-size: 14px; }
     .footer__link li a {
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; }
 
 .footer-link {
   color: #ffffff;

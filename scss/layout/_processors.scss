@@ -32,7 +32,7 @@
   // height: 721px;
   // padding-bottom: 100px;
   &__left {
-    padding-top: 80px;
+    padding-top: 60px;
     color: #99abb8;
   }
   &__content {
@@ -43,12 +43,18 @@
     color: $title-color;
     padding-bottom: 20px;
     font-family: $text-font;
-    font-weight: 900;
+   
   }
   &__text {
+    max-width: 600px;
     font-family: $text-font;
     color: $text-color;
     padding-bottom: 20px;
+  }
+  &__span{
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: 18px;
   }
   &__icon {
     color: $primary-color3 !important;
@@ -128,7 +134,7 @@
     left: 610px;
     @include breakpoint($min: 1200px, $max: 1599px) {
       top: 89px;
-      left: 451px;
+      left: 401px;
     }
   }
   &--img3 {
@@ -180,7 +186,7 @@
     left: 749px;
     @include breakpoint($min: 1200px, $max: 1599px) {
       top: 366px;
-      left: 444px;
+      left: 370px;
     }
   }
 }
