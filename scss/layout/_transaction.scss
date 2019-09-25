@@ -162,10 +162,10 @@
     transition: 0.3s ease-in-out all;
   }
   &__title2 {
-    color: $dark;
+    color: $title-color;
   }
   &__text {
-    color: #1e2325;
+    color: $text-color;
     @include media-breakpoint-down(md) {
       font-size: 13px;
     }

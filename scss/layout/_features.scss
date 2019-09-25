@@ -41,7 +41,7 @@
     @include media-breakpoint-down(md) {
       text-transform: capitalize;
       font-size: 18px;
-      color: $dark;
+      color: $title-color;
       // margin-top: 66px;
       // margin-bottom: 30px;
     }

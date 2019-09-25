@@ -7597,7 +7597,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  color: #473737;
+  color: #777;
   font-size: 14px;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
@@ -7611,7 +7611,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #222; }
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -8048,7 +8049,7 @@ th {
 
 .banner-area {
   background: url("../../img/banner/banner1_NEWNEW.png");
-  height: 937px;
+  height: 1000px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8146,13 +8147,16 @@ svg {
 
 .payment__title {
   text-transform: capitalize;
-  font-size: 42px; }
+  font-size: 42px;
+  color: #222; }
   @media (max-width: 991.98px) {
     .payment__title {
       font-size: 27px; } }
-@media (max-width: 991.98px) {
-  .payment__text {
-    font-size: 13px; } }
+.payment__text {
+  color: #777; }
+  @media (max-width: 991.98px) {
+    .payment__text {
+      font-size: 13px; } }
 
 .platform-area {
   background: #ffffff; }
@@ -8227,7 +8231,7 @@ svg {
       .single__title {
         text-transform: capitalize;
         font-size: 18px;
-        color: #181414; } }
+        color: #222; } }
   @media (max-width: 991.98px) {
     .single__text {
       font-size: 13px; } }
@@ -8479,9 +8483,9 @@ svg {
     line-height: 2.2;
     transition: 0.3s ease-in-out all; }
   .transection-area__title2 {
-    color: #181414; }
+    color: #222; }
   .transection-area__text {
-    color: #1e2325; }
+    color: #777; }
     @media (max-width: 991.98px) {
       .transection-area__text {
         font-size: 13px; } }
@@ -8518,13 +8522,13 @@ svg {
   background: #f6f6f6;
   padding-top: 100px; }
   .personal-area__title {
-    color: #181414;
+    color: #222;
     text-transform: capitalize; }
     @media (max-width: 991.98px) {
       .personal-area__title {
         font-size: 27px; } }
   .personal-area__text {
-    color: #332c2c;
+    color: #777;
     text-transform: capitalize; }
     @media (max-width: 991.98px) {
       .personal-area__text {
@@ -8540,13 +8544,13 @@ svg {
 .merchant-area {
   padding-top: 100px; }
   .merchant-area__title {
-    color: #181414;
+    color: #222;
     text-transform: capitalize; }
     @media (max-width: 991.98px) {
       .merchant-area__title {
         font-size: 27px; } }
   .merchant-area__text {
-    color: #332c2c; }
+    color: #777; }
     @media (max-width: 991.98px) {
       .merchant-area__text {
         font-size: 13px; } }
@@ -8567,11 +8571,11 @@ svg {
     width: 100px;
     height: 100px; }
   .unique__title {
-    color: #181414;
+    color: #222;
     line-height: 28px;
     margin-top: 30px; }
   .unique__text {
-    color: #181414;
+    color: #777;
     font-size: 15px;
     margin-top: 10px; }
 
@@ -8596,7 +8600,8 @@ svg {
     font-size: 30px !important; }
   @media (max-width: 991.98px) {
     .choose-area__title {
-      font-size: 15px; } }
+      font-size: 15px;
+      color: #222; } }
 
 .title-choose {
   text-align: center;
@@ -8641,13 +8646,13 @@ svg {
     padding-top: 80px;
     color: #99abb8; }
   .process__title {
-    color: #181414;
+    color: #222;
     padding-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 900; }
   .process__text {
     font-family: "Poppins", sans-serif;
-    color: #3f3838;
+    color: #777;
     padding-bottom: 20px; }
   .process__icon {
     color: #3867cf !important;
@@ -8784,7 +8789,7 @@ svg {
       .footer__text {
         font-size: 12px; } }
   .footer__quick-link {
-    transition-duration: 0.9s;
+    transition: 0.3s ease-in-out;
     color: #ffffff;
     padding-top: 100px;
     font-size: 14px; }

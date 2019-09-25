@@ -1,14 +1,14 @@
 .merchant-area {
   padding-top: 100px;
   &__title {
-    color: $dark;
+    color: $title-color;
     text-transform: capitalize;
     @include media-breakpoint-down(md) {
       font-size: 27px;
     }
   }
   &__text {
-    color: rgb(51, 44, 44);
+    color: $text-color;
     @include media-breakpoint-down(md) {
       font-size: 13px;
     }

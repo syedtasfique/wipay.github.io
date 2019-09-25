@@ -24,7 +24,7 @@
     }
   }
   &__quick-link {
-    transition-duration: 0.9s;
+    transition: 0.3s ease-in-out;
     color: $white-color;
     padding-top: 100px;
     font-size: 14px;

@@ -2,11 +2,13 @@
   &__title {
     text-transform: capitalize;
     font-size: 42px;
+    color: $title-color;
     @include media-breakpoint-down(md) {
       font-size: 27px;
     }
   }
   &__text {
+    color: $text-color;
     @include media-breakpoint-down(md) {
       font-size: 13px;
     }

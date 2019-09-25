@@ -25,6 +25,7 @@
   &__title {
     @include media-breakpoint-down(md) {
       font-size: 15px;
+      color: $title-color;
     }
   }
 }

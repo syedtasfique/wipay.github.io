@@ -40,14 +40,14 @@
     // margin-bottom: 100px;
   }
   &__title {
-    color: $dark;
+    color: $title-color;
     padding-bottom: 20px;
     font-family: $text-font;
     font-weight: 900;
   }
   &__text {
     font-family: $text-font;
-    color: rgb(63, 56, 56);
+    color: $text-color;
     padding-bottom: 20px;
   }
   &__icon {
