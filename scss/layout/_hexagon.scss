@@ -1,102 +1,101 @@
 .hexagon-feature {
-    display: flex;
-    flex-wrap: wrap;
-    // margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-bottom: 50px;
 }
 
 .hexagon {
-    position: relative;
-    width: 100px;
-    height: 57.74px;
-    background-color: #ffffff;
-    margin: 28.87px 0;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    border-radius: 5px;
-    &:hover {
-        .hexagon__img {
-            transform: scale(1.2);
-        }
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  background-color: #ffffff;
+  margin: 28.87px 0;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  &:hover {
+    .hexagon__img {
+      transform: scale(1.2);
     }
-    &__img {
-        width: 60px;
-        height: 60px;
-        transition: 0.3s ease-in-out all;
-        &--one {
-            width: 50px;
-            height: 50px;
-        }
-        &--two {
-            width: 50px;
-            height: 50px;
-        }
-        &--four {
-            width: 50px;
-            height: 50px;
-        }
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease-in-out all;
+    &--one {
+      width: 50px;
+      height: 50px;
     }
-    @include media-breakpoint-down(md) {
-        margin: 50px auto;
-        width: 140px;
-        height: 80.83px;
+    &--two {
+      width: 50px;
+      height: 50px;
     }
+    &--four {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin: 50px auto;
+    width: 140px;
+    height: 80.83px;
+  }
 }
 
 .hexagon:before,
 .hexagon:after {
-    content: "";
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 70.71px;
-    height: 70.71px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 14.6447px;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    border-radius: 5px;
-    @include media-breakpoint-down(md) {
-        width: 98.99px;
-        height: 98.99px;
-        left: 20.5025px;
-    }
+  content: "";
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 14.6447px;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  @include media-breakpoint-down(md) {
+    width: 98.99px;
+    height: 98.99px;
+    left: 20.5025px;
+  }
 }
 
 .hexagon:before {
-    top: -35.3553px;
-    @include media-breakpoint-down(md) {
-        top: -49.4975px;
-    }
+  top: -35.3553px;
+  @include media-breakpoint-down(md) {
+    top: -49.4975px;
+  }
 }
 
 .hexagon:after {
-    bottom: -35.3553px;
-    @include media-breakpoint-down(md) {
-        bottom: -49.4975px;
-    }
+  bottom: -35.3553px;
+  @include media-breakpoint-down(md) {
+    bottom: -49.4975px;
+  }
 }
-
 
 /*cover up extra shadows*/
 
 .hexagon span {
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100px;
-    height: 57.7350px;
-    z-index: 2;
-    background: inherit;
-    border-radius: 5px;
-    @include media-breakpoint-down(md) {
-        width: 140px;
-        height: 80.8290px;
-    }
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100px;
+  height: 57.735px;
+  z-index: 2;
+  background: inherit;
+  border-radius: 5px;
+  @include media-breakpoint-down(md) {
+    width: 140px;
+    height: 80.829px;
+  }
 }
