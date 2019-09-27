@@ -5,11 +5,20 @@
   z-index: 99999;
   transition: all 2s;
   // background: $primary-color;
+  @include media-breakpoint-down(sm){
+    background: linear-gradient(to right, $main-purpel-color 0%, $main-purpel-color2 100%);
+    // -webkit-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
+    // -moz-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
+    // // box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
+  }
 }
 
 .navbar-brand img {
   width: 140px;
   height: auto;
+  @include media-breakpoint-down(sm){
+    width: 114px;
+  }
 }
 
 .navbar ul li a {
@@ -19,8 +28,17 @@
   font-family: $text-font;
   text-transform: uppercase;
   font-size: 12px;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: $yellow-color;
+  }
+}
+
+.buttons{
+  @include media-breakpoint-down(sm){
+    position: fixed;
+  top: 10px;
+  right: 0;
   }
 }
 
@@ -30,4 +48,8 @@
   -webkit-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
   -moz-box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
   box-shadow: 0px 5px 15px 0px rgba(132, 132, 132, 0.42);
+}
+
+.navbar-toggler {
+  
 }

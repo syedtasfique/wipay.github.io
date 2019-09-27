@@ -186,12 +186,28 @@
     left: 0;
     top: -540px;
     @include breakpoint($min: 1200px, $max: 1599px) {
-      width: 210px;
+      width: 170px;
       left: 0;
       height: 600px;
-      top: -138px;
+      top: -77px;
+    }
+    @include media-breakpoint-only(lg) {
+      width: 127px;
+      left: 0;
+      height: 483px;
+      top: -65px;
+    }
+    @include media-breakpoint-only(md) {
+      width: 83px;
+      left: 0;
+      height: 418px;
+      top: 58px;
+    }
+    @include media-breakpoint-only(sm) {
+      display: none;
     }
   }
+
   &__shape2 {
     position: absolute;
     right: 0px;

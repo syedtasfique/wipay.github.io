@@ -43,7 +43,6 @@
     color: $title-color;
     padding-bottom: 20px;
     font-family: $text-font;
-   
   }
   &__text {
     max-width: 600px;
@@ -51,7 +50,7 @@
     color: $text-color;
     padding-bottom: 20px;
   }
-  &__span{
+  &__span {
     display: inline-block;
     margin-top: 19px;
     margin-left: 18px;
@@ -90,6 +89,9 @@
   &__content {
     padding-left: 182px;
     margin-bottom: 100px;
+    @include media-breakpoint-only(md) {
+      padding-left: 20px;
+    }
   }
   &__right {
     position: relative;
@@ -104,6 +106,9 @@
     padding-top: 0;
     @include breakpoint($min: 1200px, $max: 1599px) {
       height: 627px;
+    }
+    @include media-breakpoint-only(md) {
+      height: 653px;
     }
   }
   &__single {
@@ -123,6 +128,9 @@
     &:hover {
       transform: scale(1.2) !important;
     }
+    @include media-breakpoint-only(md) {
+      padding: 1px;
+    }
   }
   &__img {
     // width: 100px;
@@ -134,7 +142,15 @@
     left: 610px;
     @include breakpoint($min: 1200px, $max: 1599px) {
       top: 89px;
-      left: 401px;
+      left: 320px;
+    }
+    @include media-breakpoint-only(lg) {
+      top: 89px;
+      left: 327px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 529px;
+      left: 180px;
     }
   }
   &--img3 {
@@ -144,6 +160,14 @@
       top: 54px;
       left: 192px;
     }
+    @include media-breakpoint-only(lg) {
+      top: 181px;
+      left: 258px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 38px;
+      left: 152px;
+    }
   }
   &--img4 {
     top: 250px;
@@ -152,6 +176,14 @@
       top: 225px;
       left: 82px;
     }
+    @include media-breakpoint-only(lg) {
+      top: 63px;
+      left: 133px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 395px;
+      left: 46px;
+    }
   }
   &--img5 {
     top: 246px;
@@ -159,6 +191,14 @@
     @include breakpoint($min: 1200px, $max: 1599px) {
       top: 236px;
       left: 333px;
+    }
+    @include media-breakpoint-only(lg) {
+      top: 365px;
+      left: 315px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 140px;
+      left: 51px;
     }
   }
   // &--img6 {
@@ -172,6 +212,14 @@
       top: 509px;
       left: 384px;
     }
+    @include media-breakpoint-only(lg) {
+      top: 482px;
+      left: 218px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 394px;
+      left: 236px;
+    }
   }
   &--img8 {
     top: 429px;
@@ -180,6 +228,14 @@
       top: 422px;
       left: 140px;
     }
+    @include media-breakpoint-only(lg) {
+      top: 293px;
+      left: 126px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 278px;
+      left: 157px;
+    }
   }
   &--img9 {
     top: 381px;
@@ -187,6 +243,14 @@
     @include breakpoint($min: 1200px, $max: 1599px) {
       top: 366px;
       left: 370px;
+    }
+    @include media-breakpoint-only(lg) {
+      top: 182px;
+      left: 33px;
+    }
+    @include media-breakpoint-only(md) {
+      top: 139px;
+      left: 221px;
     }
   }
 }

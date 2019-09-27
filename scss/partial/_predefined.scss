@@ -127,12 +127,12 @@
 .rkmd-btn {
   position: relative;
   cursor: pointer;
-  height: 35px;
-  line-height: 35px;
-  padding: 0 1.5rem;
+  // height: 35px;
+  // line-height: 35px;
+  padding: 9px 25px;
   color: #424242;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  // font-weight: 600;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.8px;
   text-align: center;
@@ -143,9 +143,20 @@
   outline: none;
   border: none;
   user-select: none;
-  border-radius: 15px;
+  border-radius: 5px;
   transition: all 0.3s ease-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+   @include media-breakpoint-only(md){
+    font-size: 8px;
+    padding: 1px 14px;
+   
+   }
+   @include media-breakpoint-down(sm){
+    font-size: 10px;
+    padding: 0px 6px;
+    border-radius: 5px;
+    position: fixed;
+   }
 
   &:hover {
     text-decoration: none;
@@ -154,6 +165,14 @@
 
   &--banner {
     margin-right: 20px;
+  }
+  &--navbar{
+    margin-right: 20px;
+    @include media-breakpoint-down(sm){
+      margin-left: 120px;
+    }
+   
+    
   }
 
   &.btn-lightBlue {

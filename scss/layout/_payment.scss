@@ -1,7 +1,6 @@
 .payment {
   &__title {
     text-transform: capitalize;
- 
     color: $title-color;
     @include media-breakpoint-down(md) {
       font-size: 27px;
@@ -47,6 +46,9 @@
 .platform_image {
   padding: 25px 20px;
   background: rgb(243, 243, 243);
+  @include media-breakpoint-only(sm) {
+  margin-top: 30px;
+}
 }
 
 .right-img {
@@ -54,8 +56,23 @@
   right: 0;
   @include breakpoint($min: 1200px, $max: 1599px) {
     right: 0;
-    top: 1953px;
-    width: 251px;
-    height: 826px;
+    top: 2100px;
+    width: 210px;
+    height: 841px;
   }
+  @include media-breakpoint-only(lg) {
+    right: 0;
+    top: 2058px;
+    width: 184px;
+    height: 654px;
+  }
+  @include media-breakpoint-only(md) {
+    right: 0;
+    top: 1876px;
+    width: 114px;
+    height: 469px;
 }
+@include media-breakpoint-only(sm) {
+  display: none;
+}
+  }

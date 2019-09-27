@@ -4,6 +4,9 @@
   &--middle {
     margin-top: 40px;
     text-align: center;
+    @include media-breakpoint-down(sm){
+      margin-top: 0px;
+    }
   }
   &--right {
     text-align: center;
@@ -67,6 +70,9 @@
       right: -72px;
       width: 60%;
     }
+    @include media-breakpoint-down(sm) {
+      content: none;
+    }
   }
 }
 
@@ -84,6 +90,9 @@
     @include media-breakpoint-down(md) {
       right: -66px;
       width: 60%;
+    }
+    @include media-breakpoint-down(sm) {
+      content: none;
     }
   }
 }
