@@ -1,28 +1,27 @@
 .merchant-area {
-    padding-top: 100px;
-    &__title {
-        color: $dark;
-        text-transform: capitalize;
-        @include media-breakpoint-down(md) {
-            font-size: 27px;
-        }
+  padding-top: 100px;
+  &__title {
+    color: $title-color;
+    text-transform: capitalize;
+    @include media-breakpoint-down(md) {
+      font-size: 27px;
     }
-    &__text {
-        color: rgb(51, 44, 44);
-        @include media-breakpoint-down(md) {
-            font-size: 13px;
-        }
+  }
+  &__text {
+    color: $text-color;
+    @include media-breakpoint-down(md) {
+      font-size: 13px;
     }
-    &__image {
-        width: 450px;
-        height: 100%;
-        @include media-breakpoint-down(md) {
-            width: 450px;
-            height: 100%;
-        }
+  }
+  &__image {
+    max-width: 400px;
+    @include media-breakpoint-down(md) {
+      width: 325px;
+      height: 100%;
     }
-    &__content {
-        // animation: mymoves 3s ease-in-out;
-        // z-index: 100;
-    }
+  }
+  &__content {
+    // animation: mymoves 3s ease-in-out;
+    // z-index: 100;
+  }
 }

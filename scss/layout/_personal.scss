@@ -1,30 +1,29 @@
 .personal-area {
-    background: #F6F6F6;
-    padding-top: 100px;
-    &__title {
-        color: $dark;
-        text-transform: capitalize;
-        @include media-breakpoint-down(md) {
-            font-size: 27px;
-        }
+  background: #f6f6f6;
+  padding-top: 100px;
+  &__title {
+    color: $title-color;
+    text-transform: capitalize;
+    @include media-breakpoint-down(md) {
+      font-size: 27px;
     }
-    &__text {
-        color: rgb(51, 44, 44);
-        text-transform: capitalize;
-        @include media-breakpoint-down(md) {
-            font-size: 13px;
-        }
+  }
+  &__text {
+    color: $text-color;
+    text-transform: capitalize;
+    @include media-breakpoint-down(md) {
+      font-size: 13px;
     }
-    &__image {
-        width: 445px;
-        height: 100%;
-        @include media-breakpoint-down(md) {
-            width: 450px;
-            height: 100%;
-        }
+  }
+  &__image {
+    max-width: 400px;
+    @include media-breakpoint-only(md) {
+      width: 200px;
+      height: 100%;
     }
-    &__content {
-        // animation: mymoves 3s ease-in-out;
-        // z-index: 100;
-    }
+  }
+  &__content {
+    // animation: mymoves 3s ease-in-out;
+    // z-index: 100;
+  }
 }

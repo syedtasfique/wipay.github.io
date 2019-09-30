@@ -52,35 +52,10 @@
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    -webkit-transition: background 0.3s ease, -webkit-box-shadow 0.3s ease;
-    transition: background 0.3s ease, -webkit-box-shadow 0.3s ease;
-    transition: box-shadow 0.3s ease, background 0.3s ease;
-    transition: box-shadow 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.3s ease;
-}
-
-.iconbox .iconbox-icon-container,
-.iconbox .contents,
-.iconbox>h3 {
-    position: relative;
-    z-index: 2;
-}
-
-.iconbox .iconbox-icon-container,
-.iconbox p,
-.iconbox h3 {
-    -webkit-transition-property: color, background;
-    transition-property: color, background;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
-}
-
-.iconbox h3 {
-    display: inline-block;
-    margin: 0 0 0.7em;
-    font-size: 24px;
-    line-height: 1.5em;
+    -webkit-transition: background 0.9s ease, -webkit-box-shadow 0.9s ease;
+    transition: background 0.9s ease, -webkit-box-shadow 0.9s ease;
+    transition: box-shadow 0.9s ease, background 0.9s ease;
+    transition: box-shadow 0.9s ease, background 0.9s ease, -webkit-box-shadow 0.3s ease;
 }
 
 .iconbox .iconbox-icon-container {
@@ -88,7 +63,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 0.5em;
-    border: 0 solid #F2F4F7;
+    border: 0 solid rgb(243, 243, 243);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -423,7 +398,7 @@
 }
 
 .iconbox-blue {
-    background-color: #dde1f8;
+    background-color: rgb(243, 243, 243);
 }
 
 .iconbox-blue .contents {
@@ -431,7 +406,7 @@
 }
 
 .iconbox-pink {
-    background-color: #fcd7e0;
+    background-color: rgb(243, 243, 243);
 }
 
 .iconbox-pink .contents {
@@ -439,7 +414,7 @@
 }
 
 .iconbox-green {
-    background-color: #c7f7ea;
+    background-color: rgb(243, 243, 243);
 }
 
 .iconbox-green .contents {
@@ -454,12 +429,12 @@
 
 .iconbox-color-pippin .iconbox-icon-container {
     color: #fd623c;
-    background-color: #ffe4df;
+    background-color: rgb(243, 243, 243);
 }
 
 .iconbox-color-apple .iconbox-icon-container {
     color: #46d664;
-    background-color: #cdf2d6;
+    background-color: rgb(243, 243, 243);
 }
 
 .compose-mode [data-animate-icon=true] .iconbox-icon-container>svg,
@@ -492,7 +467,7 @@
     border-color: transparent;
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.07) inset;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.07) inset;
-    background-color: #f4f5f7;
+    background-color: rgb(243, 243, 243);
 }
 
 .liquid-form-tour select:focus,
@@ -547,7 +522,7 @@
     opacity: 0;
     visibility: hidden;
     background-color: var(--color-primary);
-    color: #fff;
+    color: rgb(243, 243, 243);
     -webkit-transition: opacity 0.3s, visibility 0, 3s;
     transition: opacity 0.3s, visibility 0, 3s;
 }
@@ -581,7 +556,7 @@
 }
 
 .liquid-ig-feed-overlay:hover {
-    color: #fff;
+    color: rgb(243, 243, 243);
 }
 
 
@@ -832,7 +807,7 @@ div:not(.carousel-item-inner)>.liquid-img-group-container .liquid-img-group-sing
 }
 
 .liquid-img-group-browser .liquid-img-group-url span {
-    color: #cecece;
+    color: rgb(243, 243, 243);
 }
 
 .liquid-img-group-content {
@@ -995,7 +970,7 @@ div:not(.carousel-item-inner)>.liquid-img-group-container .liquid-img-group-sing
 }
 
 .lqd-parallax-images-8 .btn-icon-solid .btn-icon {
-    background: white;
+    background: rgb(243, 243, 243);
 }
 
 .lqd-parallax-images-8 .liquid-img-group-single:last-of-type {

@@ -1,48 +1,78 @@
 .payment {
-    &__title {
-        text-transform: capitalize;
-        font-size: 42px;
-        @include media-breakpoint-down(md) {
-            font-size: 27px;
-        }
+  &__title {
+    text-transform: capitalize;
+    color: $title-color;
+    @include media-breakpoint-down(md) {
+      font-size: 27px;
     }
-    &__text {
-        @include media-breakpoint-down(md) {
-            font-size: 13px;
-        }
+  }
+  &__text {
+    color: $text-color;
+    @include media-breakpoint-down(md) {
+      font-size: 13px;
     }
+  }
 }
 
 .platform-area {
-    background: $background-color;
+  background: $white-color;
 }
 
-@keyframes placeHolderShimmer{
-    0%{
-        background-position: -468px 0
-    }
-    100%{
-        background-position: 468px 0
-    }
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
 }
-
 
 .linear-background {
   height: 300;
   width: 300;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: #f6f7f8;
-    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-    background-size: 1000px 104px;
-    height: 338px;
-    position: relative;
-    overflow: hidden;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 104px;
+  height: 338px;
+  position: relative;
+  overflow: hidden;
 }
 
-// .image{
-//     opacity: 0;
-// }
+.platform_image {
+  padding: 25px 20px;
+  background: rgb(243, 243, 243);
+  @include media-breakpoint-only(sm) {
+  margin-top: 30px;
+}
+}
+
+.right-img {
+  position: absolute;
+  right: 0;
+  @include breakpoint($min: 1200px, $max: 1599px) {
+    right: 0;
+    top: 1819px;
+    width: 210px;
+    height: 841px;
+  }
+  @include media-breakpoint-only(lg) {
+    right: 0;
+    top: 1600px;
+    width: 184px;
+    height: 654px;
+  }
+  @include media-breakpoint-only(md) {
+    right: 0;
+    top: 1876px;
+    width: 114px;
+    height: 469px;
+}
+@include media-breakpoint-down(sm) {
+  display: none;
+}
+  }

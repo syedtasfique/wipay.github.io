@@ -1,24 +1,27 @@
 /* =================================== */
 
-
 /*  Basic Style 
 /* =================================== */
 
-@import 'variables';
-@import 'mixin';
+@import "variables";
+@import "mixin";
 html,
 body {
-    margin: 0px;
-    padding: 0px;
-    color: $text-color;
-    font-size: 14px;
-    ;
-    line-height: 1.2;
-    font-family: $title-font;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: .2px;
+  margin: 0px;
+  padding: 0px;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
+
+// .main-wrapper{
+//   overflow-x: hidden;
+//   width: 100%;
+// }
 
 h1,
 h2,
@@ -26,41 +29,41 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $text-font;
+  font-family: $text-font;
+  color: $title-color;
 }
 
 ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
-    color: #ccc;
-    font-weight: 300;
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+  font-weight: 300;
 }
 
 :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #ccc;
-    opacity: 1;
-    font-weight: 300;
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  opacity: 1;
+  font-weight: 300;
 }
 
 ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #ccc;
-    opacity: 1;
-    font-weight: 300;
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+  font-weight: 300;
 }
 
 :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #ccc;
-    font-weight: 300;
+  /* Internet Explorer 10-11 */
+  color: #ccc;
+  font-weight: 300;
 }
 
 ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #ccc;
-    font-weight: 300;
+  /* Microsoft Edge */
+  color: #ccc;
+  font-weight: 300;
 }
-
 
 /**
  *  Typography
@@ -68,30 +71,30 @@ h6 {
  **/
 
 h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h5 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 h6 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 td,
 th {
-    border-radius: 0px;
+  border-radius: 0px;
 }
