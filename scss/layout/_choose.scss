@@ -1,40 +1,44 @@
 .choose-area {
-  background: $background-color;
-  &__block {
-    display: flex;
-    border: 1px solid $border-color;
-    padding: 25px 15px;
-    margin-bottom: 30px;
-    transition: all 0.5s ease;
-    @include media-breakpoint-down(md) {
-      padding: 25px 0px;
+    background: $background-color;
+    &__block {
+        display: flex;
+        border: 1px solid $border-color;
+        padding: 25px 15px;
+        margin-bottom: 30px;
+        transition: all 0.5s ease;
+        @include media-breakpoint-down(md) {
+            padding: 25px 0px;
+        }
+        &:hover {
+            // box-shadow: 10px 10px 10px #D5DBE3;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     }
-    &:hover {
-      // box-shadow: 10px 10px 10px #D5DBE3;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    &__image {
+        max-width: 400px;
+        @include media-breakpoint-down(sm) {
+            max-width: 300px;
+            margin-bottom: 50px;
+        }
     }
-  }
-  &__image {
-    max-width: 400px;
-  }
-  &__icon {
-    padding: 0px 20px 0px 20px;
-    color: $primary-color2;
-    font-size: 30px !important;
-  }
-  &__title {
-    @include media-breakpoint-down(md) {
-      font-size: 15px;
-      color: $title-color;
+    &__icon {
+        padding: 0px 20px 0px 20px;
+        color: $primary-color2;
+        font-size: 30px !important;
     }
-  }
+    &__title {
+        @include media-breakpoint-down(md) {
+            font-size: 15px;
+            color: $title-color;
+        }
+    }
 }
 
 .title-choose {
-  text-align: center;
-  color: $dark;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-bottom: 50px;
-  // padding-top: 30px;
+    text-align: center;
+    color: $dark;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    // padding-top: 30px;
 }

@@ -36,11 +36,15 @@
       font-size: 40px;
       line-height: 110px;
     }
+    @include media-breakpoint-down(sm){
+      margin-top: 0px;
+    }
   }
   &__title {
     text-transform: capitalize;
     font-size: 18px;
     color: $dark;
+    margin-bottom: 20px;
     @include media-breakpoint-down(md) {
       text-transform: capitalize;
       font-size: 18px;
@@ -50,8 +54,12 @@
     }
   }
   &__text {
-    @include media-breakpoint-down(md) {
+    margin-bottom: 50px !important;
+    @include media-breakpoint-only(md) {
       font-size: 13px;
+    }
+    @include media-breakpoint-down(sm) {
+     margin-bottom: 15px !important;
     }
   }
 }

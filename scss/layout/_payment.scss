@@ -2,14 +2,23 @@
   &__title {
     text-transform: capitalize;
     color: $title-color;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-only(md) {
       font-size: 27px;
     }
+    @include media-breakpoint-down(sm) {
+      // margin-bottom: 10px;
+      font-size: 20px;
+     }
   }
   &__text {
+    margin-bottom: 40px;
     color: $text-color;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-only(md) {
       font-size: 13px;
+    }
+    @include media-breakpoint-down(sm) {
+     margin-bottom: 10px;
+     font-size: 13px;
     }
   }
 }

@@ -7,9 +7,7 @@
         height: 700px;
     }
     @include media-breakpoint-down(sm) {
-        height: 550px;
-        margin: auto;
-        position: relative;
+
     }
     &__title {
         color: $white-color;
@@ -19,7 +17,9 @@
             font-size: 25px;
         }
         @include media-breakpoint-down(sm) {
+            font-size: 20px;
             display: inline-block;
+
         }
     }
     &__desc {
@@ -47,9 +47,9 @@
         @include media-breakpoint-down(sm){
             // margin-top: 50px;
             // line-height: 550px;
-            position: absolute;
-            top:-140px;
-            text-align: center;
+            // position: absolute;
+            // top:-140px;
+            // text-align: center;
         }
        
     }
