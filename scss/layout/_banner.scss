@@ -1,27 +1,30 @@
 .banner-area {
-    background: url('../../img/banner/banner1_NEWNEW.png');
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url('../../img/banner/banner1_NEWNEW.png') no-repeat center;
     background-size: cover;
-    width: 100%;
-    @include media-breakpoint-down(md) {
+
+   
+    @include media-breakpoint-only(md) {
         height: 700px;
     }
     @include media-breakpoint-down(sm) {
-        height: 950px;
+        height: 550px;
+        margin: auto;
+        position: relative;
     }
     &__title {
         color: $white-color;
         text-transform: capitalize;
         font-size: 42px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-only(md) {
             font-size: 25px;
+        }
+        @include media-breakpoint-down(sm) {
+            display: inline-block;
         }
     }
     &__desc {
         color: $white-color;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-only(md) {
             word-spacing: 0;
             font-size: 13px;
         }
@@ -40,8 +43,13 @@
         }
     }
     &__left{
+      
         @include media-breakpoint-down(sm){
-            margin-top: 50px;
+            // margin-top: 50px;
+            // line-height: 550px;
+            position: absolute;
+            top:-140px;
+            text-align: center;
         }
        
     }
@@ -64,10 +72,6 @@ svg {
         top: 0px;
     }
 }
-.full-screen {
-    height: 900px;
-}
-
 // .center {
 //     height: 400px;
 //     width: 100%;

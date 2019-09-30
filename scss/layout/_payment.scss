@@ -56,13 +56,13 @@
   right: 0;
   @include breakpoint($min: 1200px, $max: 1599px) {
     right: 0;
-    top: 2100px;
+    top: 1819px;
     width: 210px;
     height: 841px;
   }
   @include media-breakpoint-only(lg) {
     right: 0;
-    top: 2058px;
+    top: 1600px;
     width: 184px;
     height: 654px;
   }
@@ -72,7 +72,7 @@
     width: 114px;
     height: 469px;
 }
-@include media-breakpoint-only(sm) {
+@include media-breakpoint-down(sm) {
   display: none;
 }
   }

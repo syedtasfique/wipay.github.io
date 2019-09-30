@@ -16,10 +16,9 @@
     }
   }
   &__image {
-    width: 445px;
-    height: 100%;
-    @include media-breakpoint-down(md) {
-      width: 450px;
+    max-width: 400px;
+    @include media-breakpoint-only(md) {
+      width: 200px;
       height: 100%;
     }
   }

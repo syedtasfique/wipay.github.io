@@ -150,6 +150,17 @@ $(document).ready(function() {
     };
   }(jQuery));
 
+  //wimdows inner width and height fix banner and footer
+
+  let window_height = $(window).height();
+  let window_width = $(window).width();
+
+  $('.full-screen').css('height',window_height);
+
+
+  
+
+
 
 
  

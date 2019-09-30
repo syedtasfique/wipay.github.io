@@ -59,7 +59,7 @@
 //     }
 // }
 
-.title {
+.transection-title {
   text-align: center;
   color: $dark;
   font-family: $text-font;
@@ -82,7 +82,7 @@
   }
 }
 
-.unique {
+.category {
   background: $white-color;
   font-size: 10px;
   text-align: center;
@@ -120,11 +120,11 @@
   padding-right: 0px !important;
 }
 
-.button {
+.btn {
   display: flex;
 }
 
-.rkmd-btn {
+.primary-btn {
   position: relative;
   cursor: pointer;
   // height: 35px;
@@ -146,17 +146,16 @@
   border-radius: 5px;
   transition: all 0.3s ease-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
-   @include media-breakpoint-only(md){
+  @include media-breakpoint-only(md) {
     font-size: 8px;
     padding: 1px 14px;
-   
-   }
-   @include media-breakpoint-down(sm){
+  }
+  @include media-breakpoint-down(sm) {
     font-size: 10px;
     padding: 0px 6px;
     border-radius: 5px;
     position: fixed;
-   }
+  }
 
   &:hover {
     text-decoration: none;
@@ -166,15 +165,19 @@
   &--banner {
     margin-right: 20px;
   }
-  &--navbar{
+  &--personal {
     margin-right: 20px;
-    @include media-breakpoint-down(sm){
+  }
+  &--login {
+    padding: 4px 18px;
+    margin-right: 20px;
+    @include media-breakpoint-down(sm) {
       margin-left: 120px;
     }
-   
-    
   }
-
+  &--registration {
+    padding: 4px 17px;
+  }
   &.btn-lightBlue {
     color: #fff;
     background-color: $btn_lightBlue;
@@ -198,7 +201,7 @@
     }
   }
 }
-button:focus{
+button:focus {
   outline: none;
 }
 .ripple-effect {

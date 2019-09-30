@@ -1,4 +1,4 @@
-.single {
+.features-area {
   position: relative;
   text-align: center;
   &--middle {
@@ -11,7 +11,7 @@
   &--right {
     text-align: center;
   }
-  &__area {
+  &__content {
     padding: 0px 20px;
   }
   &__icon {
@@ -56,7 +56,7 @@
   }
 }
 
-.single:nth-child(1) {
+.features-area:nth-child(1) {
   &::after {
     content: "";
     height: 1px;
@@ -76,7 +76,7 @@
   }
 }
 
-.single:nth-child(2) {
+.features-area:nth-child(2) {
   margin-top: 30px;
   &::after {
     content: "";
