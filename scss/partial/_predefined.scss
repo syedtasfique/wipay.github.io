@@ -206,32 +206,10 @@
     &--personal {
         margin-right: 20px;
         text-align: center;
-        @include media-breakpoint-down(sm) {
-            left: 30%;
-        }
-    }
-    &--personal-learnmore {
-        @include media-breakpoint-down(sm) {
-            left: 40%;
-        }
-    }
-    &--merchant-learnmore {
-        @include media-breakpoint-down(sm) {
-            left: 40%;
-            margin-bottom: 40px;
-        }
     }
     &--marchent {
         margin-right: 20px;
         text-align: center;
-        @include media-breakpoint-down(sm) {
-            left: 35%;
-        }
-    }
-    &--signup {
-        @include media-breakpoint-down(sm) {
-            left: 40%;
-        }
     }
     &--login {
         padding: 4px 18px;

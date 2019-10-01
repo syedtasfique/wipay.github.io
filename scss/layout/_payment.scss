@@ -13,6 +13,12 @@
     }
 }
 
+.payment-button {
+    @include media-breakpoint-down(sm) {
+        justify-content: center;
+    }
+}
+
 .linear-background {
     height: 300;
     width: 300;

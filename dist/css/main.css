@@ -7599,13 +7599,12 @@ body {
   padding: 0px;
   color: #777;
   font-size: 14px;
+  height: 100%;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: 0.2px; }
-
-.wrapper {
+  letter-spacing: 0.2px;
   position: relative; }
 
 h1,
@@ -7803,25 +7802,9 @@ th {
   .primary-btn--personal {
     margin-right: 20px;
     text-align: center; }
-    @media (max-width: 767.98px) {
-      .primary-btn--personal {
-        left: 30%; } }
-  @media (max-width: 767.98px) {
-    .primary-btn--personal-learnmore {
-      left: 40%; } }
-  @media (max-width: 767.98px) {
-    .primary-btn--merchant-learnmore {
-      left: 40%;
-      margin-bottom: 40px; } }
   .primary-btn--marchent {
     margin-right: 20px;
     text-align: center; }
-    @media (max-width: 767.98px) {
-      .primary-btn--marchent {
-        left: 35%; } }
-  @media (max-width: 767.98px) {
-    .primary-btn--signup {
-      left: 40%; } }
   .primary-btn--login {
     padding: 4px 18px;
     margin-right: 20px; }
@@ -8304,6 +8287,10 @@ svg {
     background-position: -468px 0; }
   100% {
     background-position: 468px 0; } }
+@media (max-width: 767.98px) {
+  .payment-button {
+    justify-content: center; } }
+
 .linear-background {
   height: 300;
   width: 300;
@@ -8627,6 +8614,9 @@ svg {
     .personal-area__image {
       margin-bottom: 50px;
       align-content: center; } }
+  @media (max-width: 767.98px) {
+    .personal-area__content {
+      text-align: center; } }
 
 .merchant-area {
   padding-top: 100px; }
@@ -8636,6 +8626,9 @@ svg {
   @media (min-width: 992px) {
     .merchant-area__image {
       max-width: 400px; } }
+  @media (max-width: 767.98px) {
+    .merchant-area__content {
+      text-align: center; } }
 
 .category {
   position: relative;
@@ -8731,7 +8724,8 @@ svg {
       .process-area__left {
         margin-top: 0px;
         padding-top: 60px;
-        margin-bottom: 100px; } }
+        margin-bottom: 100px;
+        text-align: center; } }
   .process-area__span {
     display: inline-block;
     margin-top: 19px;

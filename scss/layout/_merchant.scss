@@ -9,6 +9,9 @@
         }
     }
     &__content {
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
         // animation: mymoves 3s ease-in-out;
         // z-index: 100;
     }
