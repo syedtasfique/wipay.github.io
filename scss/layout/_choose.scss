@@ -15,9 +15,14 @@
         }
     }
     &__image {
-        max-width: 400px;
+        @include media-breakpoint-up(lg) {
+            max-width: 400px;
+        }
+        @include media-breakpoint-only(md) {
+            margin-bottom: 50px;
+            // max-width: 100%;
+        }
         @include media-breakpoint-down(sm) {
-            max-width: 300px;
             margin-bottom: 50px;
         }
     }
@@ -27,7 +32,11 @@
         font-size: 30px !important;
     }
     &__title {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-only(md) {
+            font-size: 15px;
+            color: $title-color;
+        }
+        @include media-breakpoint-down(sm) {
             font-size: 15px;
             color: $title-color;
         }

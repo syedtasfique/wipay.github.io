@@ -108,24 +108,32 @@
         // right: -90px;
         border-radius: 300px 0px 0px 300px !important;
         width: auto;
-        height: 619px;
+        height: 710px;
         background: $white-color;
-        padding-top: 0;
         @include breakpoint($min: 1200px, $max: 1599px) {
             height: 627px;
         }
         @include media-breakpoint-only(md) {
             height: 653px;
         }
+        @include media-breakpoint-only(lg) {
+            height: 797px;
+        }
         @include media-breakpoint-down(sm) {
-            display: none;
+            position: relative;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            // right: -90px;
+            border-radius: none;
+            width: auto;
+            height: 250px;
+            background: none;
         }
     }
     &__single {
         position: absolute;
-        border-width: 5px;
-        border-color: #f6f6fa;
-        border-style: solid;
+        border: 5px solid #f6f6fa;
         border-radius: 10px;
         background-color: white;
         -webkit-box-shadow: 0px 1px 30px 0px rgba(55, 125, 162, 0.2);
@@ -141,58 +149,77 @@
         @include media-breakpoint-only(md) {
             padding: 1px;
         }
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            padding: -1px;
+        }
     }
     &__img {
         // width: 100px;
         max-width: 100px;
         // height: 70px;
+        @include media-breakpoint-down(sm) {
+            max-width: 50px;
+        }
     }
     &--img1 {
         top: 89px;
-        left: 280px;
+        left: 196px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 89px;
             left: 429px;
         }
         @include media-breakpoint-only(lg) {
             top: 89px;
-            left: 327px;
+            left: 126px;
         }
         @include media-breakpoint-only(md) {
             top: 529px;
             left: 180px;
         }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
+        }
     }
     &--img3 {
         top: 77px;
-        left: 166px;
+        left: 322px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 54px;
-            left: 192px;
+            left: -46px;
         }
         @include media-breakpoint-only(lg) {
-            top: 181px;
-            left: 258px;
+            top: 258px;
+            left: 107px;
         }
         @include media-breakpoint-only(md) {
             top: 38px;
-            left: 152px;
+            left: 103px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
     &--img4 {
         top: 250px;
-        left: 103px;
+        left: -80px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 225px;
-            left: 82px;
+            left: -350px;
         }
         @include media-breakpoint-only(lg) {
             top: 63px;
-            left: 133px;
+            left: -20px;
         }
         @include media-breakpoint-only(md) {
             top: 395px;
-            left: 46px;
+            left: -18px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
     &--img5 {
@@ -203,12 +230,16 @@
             left: 333px;
         }
         @include media-breakpoint-only(lg) {
-            top: 365px;
+            top: 478px;
             left: 315px;
         }
         @include media-breakpoint-only(md) {
             top: 140px;
             left: 51px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
     // &--img6 {
@@ -216,35 +247,43 @@
     //     left: 500px;
     // }
     &--img7 {
-        top: 520px;
-        left: 503px;
+        top: 565px;
+        left: 104px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 509px;
-            left: 384px;
+            left: 192px;
         }
         @include media-breakpoint-only(lg) {
-            top: 482px;
-            left: 218px;
+            top: 628px;
+            left: -62px;
         }
         @include media-breakpoint-only(md) {
             top: 394px;
-            left: 236px;
+            left: -74px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
     &--img8 {
         top: 429px;
-        left: 232px;
+        left: 40px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 422px;
-            left: 140px;
+            left: -282px;
         }
         @include media-breakpoint-only(lg) {
-            top: 293px;
-            left: 126px;
+            top: 378px;
+            left: -216px;
         }
         @include media-breakpoint-only(md) {
             top: 278px;
-            left: 157px;
+            left: -181px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
     &--img9 {
@@ -255,12 +294,16 @@
             left: 370px;
         }
         @include media-breakpoint-only(lg) {
-            top: 182px;
+            top: 237px;
             left: 33px;
         }
         @include media-breakpoint-only(md) {
             top: 139px;
             left: 221px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 0px;
+            left: 0px;
         }
     }
 }
