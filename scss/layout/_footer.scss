@@ -24,15 +24,19 @@
             font-size: 16px;
         }
         @include media-breakpoint-down(sm) {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             font-weight: 200;
         }
     }
     &__text {
         font-size: 14px;
         color: $white-color;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-only(md) {
             font-size: 12px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 12px;
+            margin-bottom: 20px;
         }
     }
     &__quick-link {
@@ -72,6 +76,9 @@
 
 .social {
     padding-top: 50px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+    }
 }
 
 .social i {
@@ -101,8 +108,12 @@
         color: $white-color;
         padding-top: 36px;
         text-align: center;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-only(md) {
             padding-top: 18px;
+            margin-bottom: 0px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 0px;
             margin-bottom: 0px;
         }
     }
@@ -123,5 +134,8 @@
         color: $white-color;
         background: $primary-color;
         font-size: 16px;
+    }
+    @include media-breakpoint-down(sm) {
+        bottom: 50px;
     }
 }

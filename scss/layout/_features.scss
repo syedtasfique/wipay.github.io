@@ -1,6 +1,9 @@
 .features-area {
     position: relative;
     text-align: center;
+    @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+    }
     &--middle {
         margin-top: 40px;
         text-align: center;
@@ -10,6 +13,9 @@
     }
     &--right {
         text-align: center;
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+        }
     }
     &__content {
         @include media-breakpoint-up(lg) {
@@ -39,27 +45,9 @@
             // line-height: 110px;
         }
         @include media-breakpoint-down(sm) {
-            margin-top: 0px;
-        }
-    }
-    &__title {
-        text-transform: capitalize;
-        font-size: 18px;
-        color: $dark;
-        margin-bottom: 20px;
-        @include media-breakpoint-down(md) {
-            text-transform: capitalize;
-            font-size: 18px;
-            color: $title-color;
-            // margin-top: 66px;
-            // margin-bottom: 30px;
-        }
-    }
-    &__text {
-        margin-bottom: 50px !important;
-        @include media-breakpoint-only(md) {}
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 15px !important;
+            width: 102px;
+            height: 90px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -74,6 +62,10 @@
         border: 1px dotted $border-color;
         position: absolute;
         transform: rotate(16deg);
+        @include media-breakpoint-only(lg) {
+            right: -96px;
+            width: 57%;
+        }
         @include media-breakpoint-only(md) {
             right: -51px;
             width: 41%;
@@ -95,6 +87,10 @@
         border: 1px dotted #eeeef0;
         position: absolute;
         transform: rotate(-22deg);
+        @include media-breakpoint-only(lg) {
+            right: -107px;
+            width: 56%;
+        }
         @include media-breakpoint-down(md) {
             right: -55px;
             width: 43%;
@@ -103,17 +99,4 @@
             content: none;
         }
     }
-}
-
-.single:nth-child(3) {
-    // &::after {
-    //     content: "";
-    //     height: 1px;
-    //     top: 82px;
-    //     right: -247px;
-    //     width: 115%;
-    //     border: 1px dotted $border-color;
-    //     position: absolute;
-    //     transform: rotate(16deg);
-    // }
 }

@@ -2,14 +2,14 @@
 .section-gap-bottom {
     padding-bottom: 100px;
     @include media-breakpoint-down(sm) {
-        padding-bottom: 30px;
+        padding-bottom: 60px;
     }
 }
 
 .section-gap-top {
     padding-top: 100px;
     @include media-breakpoint-down(sm) {
-        padding-top: 30px;
+        padding-top: 60px;
     }
 }
 
@@ -17,8 +17,36 @@
     padding-top: 100px;
     padding-bottom: 100px;
     @include media-breakpoint-down(sm) {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.title {
+    text-align: left;
+    color: $title-color;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+}
+
+.title-center {
+    text-align: center;
+    color: $title-color;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    // padding-top: 60px;
+}
+
+.text {
+    color: $text-color;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(sm) {
+        text-align: center;
     }
 }
 
@@ -177,6 +205,33 @@
     }
     &--personal {
         margin-right: 20px;
+        text-align: center;
+        @include media-breakpoint-down(sm) {
+            left: 30%;
+        }
+    }
+    &--personal-learnmore {
+        @include media-breakpoint-down(sm) {
+            left: 40%;
+        }
+    }
+    &--merchant-learnmore {
+        @include media-breakpoint-down(sm) {
+            left: 40%;
+            margin-bottom: 40px;
+        }
+    }
+    &--marchent {
+        margin-right: 20px;
+        text-align: center;
+        @include media-breakpoint-down(sm) {
+            left: 35%;
+        }
+    }
+    &--signup {
+        @include media-breakpoint-down(sm) {
+            left: 40%;
+        }
     }
     &--login {
         padding: 4px 18px;

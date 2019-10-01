@@ -1,18 +1,7 @@
 .merchant-area {
     padding-top: 100px;
     @include media-breakpoint-down(sm) {
-        padding-top: 30px;
-    }
-    &__title {
-        color: $title-color;
-        text-transform: capitalize;
-        @include media-breakpoint-only(md) {
-            font-size: 27px;
-        }
-    }
-    &__text {
-        color: $text-color;
-        @include media-breakpoint-only(md) {}
+        padding-top: 60px;
     }
     &__image {
         @include media-breakpoint-up(lg) {

@@ -16,7 +16,7 @@
             display: inline-block;
         }
     }
-    &__desc {
+    &__text {
         color: $white-color;
         @include media-breakpoint-only(md) {
             word-spacing: 0;

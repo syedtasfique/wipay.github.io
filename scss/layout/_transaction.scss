@@ -1,127 +1,3 @@
-.trans-area {
-    background: $block-color;
-    width: 100%;
-    position: relative;
-    &__left {
-        &::after {
-            display: inline-block;
-            content: "";
-            border: 1px solid $border-color2;
-            width: 503px;
-            position: absolute;
-            top: 26px;
-            left: 90px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-        &::before {
-            display: inline-block;
-            content: "";
-            background: $border-color2;
-            border: 1px solid $border-color2;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 14px;
-            left: 493px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-    }
-    &__right {
-        &::after {
-            display: inline-block;
-            content: "";
-            border: 1px solid $border-color2;
-            height: 845px;
-            position: absolute;
-            top: -26px;
-            left: -65px;
-        }
-    }
-    &__title {
-        color: $dark;
-    }
-    &__image {
-        width: 300px;
-        transition: 0.3s ease-in-out all;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    &__right2 {
-        &::after {
-            display: inline-block;
-            content: "";
-            border: 1px solid $border-color2;
-            width: 275px;
-            position: absolute;
-            top: 26px;
-            left: -266px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-        &::before {
-            display: inline-block;
-            content: "";
-            background: $border-color2;
-            border: 1px solid $border-color2;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 14px;
-            left: -78px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-    }
-    &__image2 {
-        margin-bottom: 100px;
-        width: 300px;
-        transition: 0.3s ease-in-out all;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    &__image3 {
-        margin-bottom: 100px;
-        width: 350px;
-        transition: 0.3s ease-in-out all;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    &__left2 {
-        &::before {
-            display: inline-block;
-            content: "";
-            background: $border-color2;
-            border: 1px solid $border-color2;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 11px;
-            left: 493px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-        &::after {
-            display: inline-block;
-            content: "";
-            border: 1px solid $border-color2;
-            width: 479px;
-            position: absolute;
-            top: 23px;
-            left: 153px;
-            color: $white-color;
-            font-family: $text-font;
-        }
-    }
-}
-
 // 2nd trans start
 .transection-area {
     background-repeat: no-repeat;
@@ -140,6 +16,9 @@
             .transection-area__title {
                 transform: scale(1.2);
             }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 40px;
         }
     }
     &__icon {

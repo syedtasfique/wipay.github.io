@@ -1,24 +1,4 @@
-.payment {
-    &__title {
-        text-transform: capitalize;
-        color: $title-color;
-        @include media-breakpoint-only(md) {
-            font-size: 27px;
-        }
-        @include media-breakpoint-down(sm) {
-            // margin-bottom: 10px;
-            font-size: 20px;
-        }
-    }
-    &__text {
-        margin-bottom: 40px;
-        color: $text-color;
-        @include media-breakpoint-only(md) {}
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 10px;
-        }
-    }
-}
+.payment {}
 
 .platform-area {
     background: $white-color;
