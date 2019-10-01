@@ -7603,7 +7603,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  position: relative; }
 
 h1,
 h2,
@@ -7669,16 +7670,23 @@ th {
 
 .section-gap-bottom {
   padding-bottom: 100px; }
+  @media (max-width: 767.98px) {
+    .section-gap-bottom {
+      padding-bottom: 30px; } }
 
 .section-gap-top {
   padding-top: 100px; }
   @media (max-width: 767.98px) {
     .section-gap-top {
-      padding-top: 0px; } }
+      padding-top: 30px; } }
 
 .section-gap {
   padding-top: 100px;
   padding-bottom: 100px; }
+  @media (max-width: 767.98px) {
+    .section-gap {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
 
 .transection-title {
   text-align: center;
@@ -7758,7 +7766,7 @@ th {
   @media (max-width: 767.98px) {
     .primary-btn {
       font-size: 10px;
-      padding: 0px 6px;
+      padding: 1px 10px;
       border-radius: 5px;
       position: fixed; } }
   .primary-btn:hover {
@@ -7773,13 +7781,15 @@ th {
     margin-right: 20px; }
     @media (max-width: 767.98px) {
       .primary-btn--login {
+        padding: 3px 11px;
         margin-right: 0px;
         font-size: 12px; } }
   .primary-btn--registration {
     padding: 4px 17px; }
     @media (max-width: 767.98px) {
       .primary-btn--registration {
-        font-size: 12px; } }
+        font-size: 12px;
+        padding: 3px 11px; } }
   .primary-btn.btn-lightBlue {
     color: #fff;
     background-color: #03a9f4; }
@@ -8092,6 +8102,10 @@ button:focus {
   transition: all 0.3s ease-in-out; }
   .navbar ul li a:hover {
     color: #f5b52f; }
+  @media (max-width: 767.98px) {
+    .navbar ul li a {
+      font-size: 16px;
+      margin-right: 20px; } }
 
 .scroll-nav {
   position: fixed;
@@ -8108,6 +8122,31 @@ button:focus {
       right: 5px;
       top: 14px; } }
 
+@media only screen and (max-width: 767px) {
+  #slide-navbar-collapse {
+    position: fixed;
+    top: 59px;
+    right: 0;
+    z-index: 99;
+    width: 85%;
+    height: 100%;
+    background: linear-gradient(to right, #5169fa 0%, #2bbcfd 100%);
+    overflow: auto;
+    padding: 0 15px 15px; }
+
+  .menu-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    transition: .2s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 59px;
+    right: 0; }
+
+  .menu-overlay.show {
+    visibility: visible;
+    z-index: 10; } }
 .banner-area {
   background: url("../../img/banner/banner1_NEWNEW.png") no-repeat center;
   background-size: cover; }
@@ -8293,11 +8332,9 @@ svg {
         margin-top: 0px; } }
   .features-area--right {
     text-align: center; }
-  .features-area__content {
-    padding: 0px 20px; }
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      .features-area__content {
-        padding: 0px 0px; } }
+  @media (min-width: 992px) {
+    .features-area__content {
+      padding: 0px 20px; } }
   .features-area__icon {
     font-size: 50px;
     display: inline-block;
@@ -8305,17 +8342,12 @@ svg {
     text-align: center;
     height: 150px;
     line-height: 150px;
+    margin-bottom: 40px;
     color: #f5b52f !important;
     border-radius: 50%;
     -webkit-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212);
     -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212);
     box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212); }
-    @media (max-width: 991.98px) {
-      .features-area__icon {
-        width: 110px;
-        height: 110px;
-        font-size: 40px;
-        line-height: 110px; } }
     @media (max-width: 767.98px) {
       .features-area__icon {
         margin-top: 0px; } }
@@ -8344,10 +8376,10 @@ svg {
   border: 1px dotted #eeeef0;
   position: absolute;
   transform: rotate(16deg); }
-  @media (max-width: 991.98px) {
+  @media (min-width: 768px) and (max-width: 991.98px) {
     .features-area:nth-child(1)::after {
-      right: -72px;
-      width: 60%; } }
+      right: -51px;
+      width: 41%; } }
   @media (max-width: 767.98px) {
     .features-area:nth-child(1)::after {
       content: none; } }
@@ -8365,8 +8397,8 @@ svg {
     transform: rotate(-22deg); }
     @media (max-width: 991.98px) {
       .features-area:nth-child(2)::after {
-        right: -66px;
-        width: 60%; } }
+        right: -55px;
+        width: 43%; } }
     @media (max-width: 767.98px) {
       .features-area:nth-child(2)::after {
         content: none; } }
@@ -8565,9 +8597,12 @@ svg {
   text-align: center;
   padding-bottom: 100px;
   position: relative; }
-  .transection-area__single:hover .transection-area__circle {
+  @media (max-width: 767.98px) {
+    .transection-area {
+      padding-bottom: 30px; } }
+  .transection-area__single-trans:hover .transection-area__circle {
     transform: scale(1.2); }
-  .transection-area__single:hover .transection-area__title {
+  .transection-area__single-trans:hover .transection-area__title {
     transform: scale(1.2); }
   .transection-area__icon {
     padding: 0px 20px 0px 20px;
@@ -8588,11 +8623,12 @@ svg {
     @media (max-width: 767.98px) {
       .transection-area__circle {
         margin-bottom: 0px; } }
-  .transection-area__content {
-    padding: 0px 35px; }
-    @media (max-width: 767.98px) {
-      .transection-area__content {
-        margin-bottom: 50px; } }
+  @media (min-width: 992px) {
+    .transection-area__content {
+      padding: 0px 35px; } }
+  @media (max-width: 767.98px) {
+    .transection-area__content {
+      margin-bottom: 50px; } }
   .transection-area__title {
     line-height: 2.2;
     transition: 0.3s ease-in-out all; }
@@ -8647,6 +8683,9 @@ svg {
 .personal-area {
   background: #f6f6f6;
   padding-top: 100px; }
+  @media (max-width: 767.98px) {
+    .personal-area {
+      padding-top: 30px; } }
   .personal-area__title {
     color: #222;
     text-transform: capitalize; }
@@ -8666,6 +8705,9 @@ svg {
 
 .merchant-area {
   padding-top: 100px; }
+  @media (max-width: 767.98px) {
+    .merchant-area {
+      padding-top: 30px; } }
   .merchant-area__title {
     color: #222;
     text-transform: capitalize; }
@@ -8751,7 +8793,11 @@ svg {
       .fixed-background__title {
         font-size: 20px; } }
   .fixed-background__text {
-    color: #ffffff; }
+    color: #ffffff;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .fixed-background__text {
+        max-width: 700px; } }
 
 .processors {
   transition-duration: 0.9s; }

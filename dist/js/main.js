@@ -93,7 +93,7 @@ window.onload = function() {
 $('.image').on('load', function() {
     // $("div").removeClass("linear-background");
     console.log("image loaded");
-    
+
 });
 
 //button
@@ -110,57 +110,68 @@ $('.image').on('load', function() {
 -------------------------------------------------------- */
 $(document).ready(function() {
     $('.ripple-effect').rkmd_rippleEffect();
-  });
-  
-  (function($) {
+});
+
+(function($) {
     $.fn.rkmd_rippleEffect = function() {
-      var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
-  
-      btn = $(this).not('[disabled], .disabled');
-  
-      btn.on('mousedown', function(e) {
-        self = $(this);
-  
-        // Disable right click
-        if(e.button === 2) {
-          return false;
-        }
-  
-        if(self.find('.ripple').length === 0) {
-          self.prepend('<span class="ripple"></span>');
-        }
-        ripple = self.find('.ripple');
-        ripple.removeClass('animated');
-  
-        eWidth = self.outerWidth();
-        eHeight = self.outerHeight();
-        size = Math.max(eWidth, eHeight);
-        ripple.css({'width': size, 'height': size});
-  
-        rippleX = parseInt(e.pageX - self.offset().left) - (size / 2);
-        rippleY = parseInt(e.pageY - self.offset().top) - (size / 2);
-  
-        ripple.css({ 'top': rippleY +'px', 'left': rippleX +'px' }).addClass('animated');
-  
-        setTimeout(function() {
-          ripple.remove();
-        }, 800);
-  
-      });
+        var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
+
+        btn = $(this).not('[disabled], .disabled');
+
+        btn.on('mousedown', function(e) {
+            self = $(this);
+
+            // Disable right click
+            if (e.button === 2) {
+                return false;
+            }
+
+            if (self.find('.ripple').length === 0) {
+                self.prepend('<span class="ripple"></span>');
+            }
+            ripple = self.find('.ripple');
+            ripple.removeClass('animated');
+
+            eWidth = self.outerWidth();
+            eHeight = self.outerHeight();
+            size = Math.max(eWidth, eHeight);
+            ripple.css({ 'width': size, 'height': size });
+
+            rippleX = parseInt(e.pageX - self.offset().left) - (size / 2);
+            rippleY = parseInt(e.pageY - self.offset().top) - (size / 2);
+
+            ripple.css({ 'top': rippleY + 'px', 'left': rippleX + 'px' }).addClass('animated');
+
+            setTimeout(function() {
+                ripple.remove();
+            }, 800);
+
+        });
     };
-  }(jQuery));
+}(jQuery));
 
-  //wimdows inner width and height fix banner and footer
+//wimdows inner width and height fix banner and footer
 
-  let window_height = $(window).height();
-  let window_width = $(window).width();
+let window_height = $(window).height();
+let window_width = $(window).width();
 
-  $('.full-screen').css('height',window_height);
+$('.full-screen').css('height', window_height);
+
+//navbar collapse
+
+$('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({
+        'width': 'toggle'
+    }, 350);
 
 
-  
-
-
-
-
- 
+});
+$(".menu-overlay").click(function(event) {
+    $(".navbar-toggler").trigger("click");
+    $(".menu-overlay").toggleClass('show');
+    console.log("clicked");
+});
+$('.navbar-toggler, .menu-overlay').on('click', function() {
+    $(".menu-overlay").toggleClass('show');
+});

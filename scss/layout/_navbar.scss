@@ -32,6 +32,10 @@
     &:hover {
         color: $yellow-color;
     }
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        margin-right: 20px;
+    }
 }
 
 .scroll-nav {
@@ -49,5 +53,34 @@
         position: fixed;
         right: 5px;
         top: 14px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #slide-navbar-collapse {
+        position: fixed;
+        top: 59px;
+        right: 0;
+        z-index: 99;
+        width: 85%;
+        height: 100%;
+        background: linear-gradient(to right, #5169fa 0%, $main-purpel-color2 100%);
+        overflow: auto;
+        padding: 0 15px 15px;
+    }
+    .menu-overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        visibility: hidden;
+        transition: .2s;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 59px;
+        right: 0;
+    }
+    .menu-overlay.show {
+        visibility: visible;
+        // right: 0;
+        z-index: 10;
     }
 }

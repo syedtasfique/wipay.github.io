@@ -129,7 +129,10 @@
     // background: #F6F6F6;
     padding-bottom: 100px;
     position: relative;
-    &__single {
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
+    &__single-trans {
         &:hover {
             .transection-area__circle {
                 transform: scale(1.2);
@@ -161,7 +164,9 @@
         }
     }
     &__content {
-        padding: 0px 35px;
+        @include media-breakpoint-up(lg) {
+            padding: 0px 35px;
+        }
         @include media-breakpoint-down(sm) {
             margin-bottom: 50px;
         }

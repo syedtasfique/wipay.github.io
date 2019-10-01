@@ -1,6 +1,9 @@
 .personal-area {
     background: #f6f6f6;
     padding-top: 100px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 30px;
+    }
     &__title {
         color: $title-color;
         text-transform: capitalize;
