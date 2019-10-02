@@ -227,7 +227,7 @@
         @include media-breakpoint-down(sm) {
             // margin-left: 120px;
             padding: 3px 11px;
-            margin-right: 0px;
+            margin-right: 10px;
             font-size: 12px;
         }
     }
@@ -276,9 +276,8 @@ button:focus {
 
 .buttons {
     @include media-breakpoint-down(sm) {
-        position: fixed;
-        right: 45px;
-        top: 11px;
+        position: absolute;
+        bottom: 79px;
     }
 }
 
