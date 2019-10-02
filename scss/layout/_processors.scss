@@ -37,7 +37,7 @@
         color: #99abb8;
         @include media-breakpoint-down(sm) {
             margin-top: 0px;
-            padding-top: 60px;
+            padding-top: 0px;
             margin-bottom: 100px;
             text-align: center;
         }
@@ -61,6 +61,9 @@
         line-height: 80px;
         width: 80px;
         height: 80px;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -75,6 +78,9 @@
             width: 80px;
             height: 80px;
             z-index: -1;
+            @include media-breakpoint-down(sm) {
+                content: none;
+            }
         }
     }
     &__content {

@@ -11,6 +11,8 @@
     border-radius: 0px 150px 0px 0px !important;
     @include media-breakpoint-down(sm) {
         background: rgb(32, 44, 93);
+        margin-top: 0px;
+        padding-top: 60px;
     }
     &__image {
         width: 150px;

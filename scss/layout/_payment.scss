@@ -1,4 +1,8 @@
-.payment {}
+.payment {
+    @include media-breakpoint-down(sm) {
+        margin-top: 60px;
+    }
+}
 
 .platform-area {
     background: $white-color;

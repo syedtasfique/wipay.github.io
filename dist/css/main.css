@@ -7593,13 +7593,16 @@ a.text-dark:hover, a.text-dark:focus {
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
-html,
+html {
+  width: 100%;
+  height: 100%; }
+
 body {
   margin: 0px;
   padding: 0px;
   color: #777;
   font-size: 14px;
-  height: 100%;
+  width: 100%;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -7697,7 +7700,8 @@ th {
   margin-bottom: 50px; }
   @media (max-width: 767.98px) {
     .title {
-      text-align: center; } }
+      text-align: center;
+      font-size: 25px; } }
 
 .title-center {
   text-align: center;
@@ -7705,6 +7709,9 @@ th {
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 50px; }
+  @media (max-width: 767.98px) {
+    .title-center {
+      font-size: 25px; } }
 
 .text {
   color: #777;
@@ -7768,7 +7775,7 @@ th {
 .primary-btn {
   position: relative;
   cursor: pointer;
-  padding: 9px 25px;
+  padding: 6px 22px;
   color: #ffffff;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
@@ -7791,7 +7798,7 @@ th {
   @media (max-width: 767.98px) {
     .primary-btn {
       font-size: 10px;
-      padding: 1px 10px;
+      padding: 4px 11px;
       border-radius: 5px;
       position: fixed; } }
   .primary-btn:hover {
@@ -7803,7 +7810,6 @@ th {
     margin-right: 20px;
     text-align: center; }
   .primary-btn--marchent {
-    margin-right: 20px;
     text-align: center; }
   .primary-btn--login {
     padding: 4px 18px;
@@ -8157,21 +8163,21 @@ button:focus {
     top: 59px;
     right: 0;
     z-index: 99;
-    width: 70%;
+    width: 50%;
     height: 100%;
     background: linear-gradient(to right, #5169fa 0%, #2bbcfd 100%);
     overflow: auto;
     padding: 0 15px 15px; }
 
   .menu-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #0b143377;
     visibility: hidden;
     transition: .2s;
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 59px;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
 
   .menu-overlay.show {
     visibility: visible;
@@ -8278,6 +8284,10 @@ svg {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight; }
+
+@media (max-width: 767.98px) {
+  .payment {
+    margin-top: 60px; } }
 
 .platform-area {
   background: #ffffff; }
@@ -8622,13 +8632,18 @@ svg {
   padding-top: 100px; }
   @media (max-width: 767.98px) {
     .merchant-area {
-      padding-top: 60px; } }
+      padding-top: 20px; } }
   @media (min-width: 992px) {
     .merchant-area__image {
       max-width: 400px; } }
   @media (max-width: 767.98px) {
+    .merchant-area__image {
+      margin-top: 30px;
+      order: 1; } }
+  @media (max-width: 767.98px) {
     .merchant-area__content {
-      text-align: center; } }
+      text-align: center;
+      order: 2; } }
 
 .category {
   position: relative;
@@ -8723,7 +8738,7 @@ svg {
     @media (max-width: 767.98px) {
       .process-area__left {
         margin-top: 0px;
-        padding-top: 60px;
+        padding-top: 0px;
         margin-bottom: 100px;
         text-align: center; } }
   .process-area__span {
@@ -8744,6 +8759,9 @@ svg {
     line-height: 80px;
     width: 80px;
     height: 80px; }
+    @media (max-width: 767.98px) {
+      .process-area__icon {
+        display: none; } }
     .process-area__icon::before {
       content: "";
       position: absolute;
@@ -8758,6 +8776,9 @@ svg {
       width: 80px;
       height: 80px;
       z-index: -1; }
+      @media (max-width: 767.98px) {
+        .process-area__icon::before {
+          content: none; } }
   .process-area__content {
     padding-left: 182px;
     margin-bottom: 100px;
@@ -8969,7 +8990,9 @@ svg {
   border-radius: 0px 150px 0px 0px !important; }
   @media (max-width: 767.98px) {
     .footer {
-      background: #202c5d; } }
+      background: #202c5d;
+      margin-top: 0px;
+      padding-top: 60px; } }
   .footer__image {
     width: 150px;
     margin-bottom: 30px; }
