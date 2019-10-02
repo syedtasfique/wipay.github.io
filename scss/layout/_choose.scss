@@ -17,6 +17,23 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
+    &__block2 {
+        display: flex;
+        border: 1px solid $border-color;
+        padding: 6px 7px;
+        // margin-bottom: 30px;
+        transition: all 0.5s ease;
+        @include media-breakpoint-only(md) {
+            padding: 25px 0px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 25px 5px;
+        }
+        &:hover {
+            // box-shadow: 10px 10px 10px #D5DBE3;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
     &__title {
         line-height: 1.2;
         margin: auto 0;

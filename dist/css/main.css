@@ -7684,6 +7684,12 @@ th {
     .section-gap-top {
       padding-top: 60px; } }
 
+.section-gap-top2 {
+  padding-top: 100px; }
+  @media (max-width: 767.98px) {
+    .section-gap-top2 {
+      padding-top: 0px; } }
+
 .section-gap {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -7715,7 +7721,7 @@ th {
 
 .text {
   color: #777;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   @media (max-width: 767.98px) {
     .text {
       text-align: center; } }
@@ -8111,14 +8117,11 @@ button:focus {
   padding-top: 5px; }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 99999;
   transition: all 2s; }
-  @media (max-width: 767.98px) {
-    .navbar {
-      background: linear-gradient(to right, #5169fa 0%, #2bbcfd 100%); } }
 
 .navbar-brand img {
   width: 140px;
@@ -8163,7 +8166,7 @@ button:focus {
     top: 59px;
     right: 0;
     z-index: 99;
-    width: 50%;
+    width: 64%;
     height: 100%;
     background: linear-gradient(to right, #5169fa 0%, #2bbcfd 100%);
     overflow: auto;
@@ -8287,7 +8290,7 @@ svg {
 
 @media (max-width: 767.98px) {
   .payment {
-    margin-top: 60px; } }
+    margin-top: 0px; } }
 
 .platform-area {
   background: #ffffff; }
@@ -8360,6 +8363,11 @@ svg {
     @media (max-width: 767.98px) {
       .features-area--middle {
         margin-top: 0px; } }
+  .features-area__text {
+    margin-bottom: 30px; }
+    @media (max-width: 767.98px) {
+      .features-area__text {
+        margin-bottom: 15px; } }
   .features-area--right {
     text-align: center; }
     @media (max-width: 767.98px) {
@@ -8383,8 +8391,9 @@ svg {
     box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212); }
     @media (max-width: 767.98px) {
       .features-area__icon {
-        width: 102px;
+        width: 90px;
         height: 90px;
+        line-height: 90;
         margin-bottom: 10px; } }
 
 .features-area:nth-child(1)::after {
@@ -8527,7 +8536,7 @@ svg {
   position: relative; }
   @media (max-width: 767.98px) {
     .transection-area {
-      padding-bottom: 30px; } }
+      padding-bottom: 0px; } }
   .transection-area__single-trans:hover .transection-area__circle {
     transform: scale(1.2); }
   .transection-area__single-trans:hover .transection-area__title {
@@ -8557,9 +8566,6 @@ svg {
   @media (min-width: 992px) {
     .transection-area__content {
       padding: 0px 35px; } }
-  @media (max-width: 767.98px) {
-    .transection-area__content {
-      margin-bottom: 50px; } }
   .transection-area__title {
     line-height: 2.2;
     transition: 0.3s ease-in-out all; }
@@ -8681,6 +8687,19 @@ svg {
         padding: 25px 5px; } }
     .choose-area__block:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .choose-area__block2 {
+    display: flex;
+    border: 1px solid #eeeef0;
+    padding: 6px 7px;
+    transition: all 0.5s ease; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .choose-area__block2 {
+        padding: 25px 0px; } }
+    @media (max-width: 767.98px) {
+      .choose-area__block2 {
+        padding: 25px 5px; } }
+    .choose-area__block2:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .choose-area__title {
     line-height: 1.2;
     margin: auto 0;
@@ -8743,7 +8762,7 @@ svg {
       .process-area__left {
         margin-top: 0px;
         padding-top: 0px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         text-align: center; } }
   .process-area__span {
     display: inline-block;
@@ -9078,7 +9097,7 @@ svg {
       margin-bottom: 0px; } }
   @media (max-width: 767.98px) {
     .bottom__text {
-      padding-top: 0px;
+      padding: 13px 19px;
       margin-bottom: 0px; } }
 
 .go-to-top {

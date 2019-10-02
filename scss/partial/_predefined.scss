@@ -13,6 +13,13 @@
     }
 }
 
+.section-gap-top2 {
+    padding-top: 100px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 0px;
+    }
+}
+
 .section-gap {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -48,7 +55,7 @@
 
 .text {
     color: $text-color;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include media-breakpoint-down(sm) {
         text-align: center;
     }
