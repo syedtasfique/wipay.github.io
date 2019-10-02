@@ -8670,7 +8670,7 @@ svg {
   .choose-area__block {
     display: flex;
     border: 1px solid #eeeef0;
-    padding: 25px 15px;
+    padding: 6px 7px;
     margin-bottom: 30px;
     transition: all 0.5s ease; }
     @media (min-width: 768px) and (max-width: 991.98px) {
@@ -8681,6 +8681,10 @@ svg {
         padding: 25px 5px; } }
     .choose-area__block:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .choose-area__title {
+    line-height: 1.2;
+    margin: auto 0;
+    padding: 20px 20px; }
   @media (min-width: 992px) {
     .choose-area__image {
       max-width: 400px; } }
@@ -8803,7 +8807,7 @@ svg {
     background: #ffffff; }
     @media (min-width: 1200px) and (max-width: 1599px) {
       .process-area__right {
-        height: 627px; } }
+        height: 725px; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
       .process-area__right {
         height: 653px; } }
@@ -9047,10 +9051,10 @@ svg {
       font-size: 12px; } }
 
 .social {
-  padding-top: 50px; }
+  padding-top: 10px; }
   @media (max-width: 767.98px) {
     .social {
-      padding-top: 20px; } }
+      padding-top: 10px; } }
 
 .social i {
   color: #ffffff !important;

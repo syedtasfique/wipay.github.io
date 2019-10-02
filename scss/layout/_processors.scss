@@ -108,7 +108,7 @@
         height: 710px;
         background: $white-color;
         @include breakpoint($min: 1200px, $max: 1599px) {
-            height: 627px;
+            height: 725px;
         }
         @include media-breakpoint-only(md) {
             height: 653px;

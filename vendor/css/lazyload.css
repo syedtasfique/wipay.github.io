@@ -39,7 +39,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 2em;
+    padding: 2px 20px;
+    /* margin-bottom: 2em; */
     position: relative;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -380,7 +381,7 @@
 .iconbox-xl .iconbox-icon-container img[src$=".svg"],
 .iconbox-xl .iconbox-icon-container object,
 .iconbox-xl .iconbox-icon-container>svg {
-    width: 50px;
+    /* width: 50px; */
 }
 
 .iconbox-icon-ripple .iconbox-icon-container:before {
