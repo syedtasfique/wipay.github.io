@@ -3,9 +3,12 @@
     text-align: center;
     &--block {
         margin-bottom: 30px;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+        }
     }
     &--block2 {
-        // margin-bottom: 30px;
+        margin-bottom: 30px;
         @include media-breakpoint-down(sm) {
             margin-bottom: 30px;
         }

@@ -37,6 +37,7 @@
         color: #99abb8;
         @include media-breakpoint-only(md) {
             padding-top: 0px;
+            margin-top: 30px;
         }
         @include media-breakpoint-down(sm) {
             margin-top: 0px;
@@ -114,7 +115,7 @@
             height: 725px;
         }
         @include media-breakpoint-only(md) {
-            height: 653px;
+            // height: 653px;
         }
         @include media-breakpoint-only(lg) {
             height: 797px;
@@ -127,8 +128,8 @@
             // right: -90px;
             border-radius: none;
             width: auto;
-            height: 250px;
             background: none;
+            height: auto;
         }
     }
     &__single {
@@ -194,7 +195,7 @@
             left: 107px;
         }
         @include media-breakpoint-only(md) {
-            top: 38px;
+            top: 115px;
             left: 103px;
         }
         @include media-breakpoint-down(sm) {
@@ -298,8 +299,8 @@
             left: 33px;
         }
         @include media-breakpoint-only(md) {
-            top: 139px;
-            left: 221px;
+            top: 265px;
+            left: 253px;
         }
         @include media-breakpoint-down(sm) {
             top: 0px;

@@ -47,7 +47,7 @@
     color: $title-color;
     font-weight: 500;
     text-transform: capitalize;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include media-breakpoint-down(sm) {
         text-align: center;
         font-size: 25px;
@@ -68,7 +68,7 @@
 
 .text {
     color: $text-color;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     @include media-breakpoint-down(sm) {
         text-align: center;
     }
@@ -211,8 +211,8 @@
     transition: all 0.3s ease-out;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
     @include media-breakpoint-only(md) {
-        font-size: 8px;
-        padding: 1px 14px;
+        font-size: 12px;
+        padding: 6px 19px;
     }
     @include media-breakpoint-down(sm) {
         font-size: 10px;
@@ -255,13 +255,30 @@
         color: #fff;
         background-color: $btn_lightBlue;
         &--login {
+            &:hover {
+                background-color: lighten($btn_lightBlue, 8%);
+                color: #ffffff;
+            }
             @include media-breakpoint-down(sm) {
                 background-color: #4b75fa;
+                color: #ffffff;
+                &:hover {
+                    background-color: lighten($btn_lightBlue, 8%);
+                    color: #ffffff;
+                }
             }
         }
         &--registration {
+            &:hover {
+                background-color: lighten($btn_lightBlue, 8%);
+                color: #ffffff;
+            }
             @include media-breakpoint-down(sm) {
                 background-color: #4b75fa;
+                &:hover {
+                    background-color: lighten($btn_lightBlue, 8%);
+                    color: #ffffff;
+                }
             }
         }
         &:hover {

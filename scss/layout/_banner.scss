@@ -1,9 +1,6 @@
 .banner-area {
     background: url('../../img/banner/banner1_NEWNEW.png') no-repeat center;
     background-size: cover;
-    @include media-breakpoint-only(md) {
-        height: 700px;
-    }
     &__title {
         color: $white-color;
         text-transform: capitalize;

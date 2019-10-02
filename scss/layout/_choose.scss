@@ -7,10 +7,10 @@
         margin-bottom: 30px;
         transition: all 0.5s ease;
         @include media-breakpoint-only(md) {
-            padding: 25px 0px;
+            padding: 0px 0px;
         }
         @include media-breakpoint-down(sm) {
-            padding: 25px 5px;
+            padding: 0px 5px;
         }
         &:hover {
             // box-shadow: 10px 10px 10px #D5DBE3;
@@ -24,10 +24,10 @@
         // margin-bottom: 30px;
         transition: all 0.5s ease;
         @include media-breakpoint-only(md) {
-            padding: 25px 0px;
+            padding: 0px 0px;
         }
         @include media-breakpoint-down(sm) {
-            padding: 25px 5px;
+            padding: 0px 5px;
         }
         &:hover {
             // box-shadow: 10px 10px 10px #D5DBE3;
@@ -55,5 +55,8 @@
         padding: 0px 20px 0px 20px;
         color: $primary-color2;
         font-size: 30px !important;
+        @include media-breakpoint-only(md) {
+            padding: 0px -1px 0px 0px;
+        }
     }
 }

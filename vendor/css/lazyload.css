@@ -39,7 +39,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 2px 20px;
+    /* padding: 2px 20px; */
     /* margin-bottom: 2em; */
     position: relative;
     -webkit-box-align: center;
