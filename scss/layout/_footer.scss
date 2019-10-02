@@ -112,7 +112,7 @@
         text-align: center;
         @include media-breakpoint-only(md) {
             padding-top: 18px;
-            margin-bottom: 0px;
+            margin-bottom: 12px;
         }
         @include media-breakpoint-down(sm) {
             padding: 13px 19px;

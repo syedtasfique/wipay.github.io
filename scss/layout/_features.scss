@@ -96,7 +96,7 @@
         position: absolute;
         transform: rotate(-22deg);
         @include media-breakpoint-only(lg) {
-            right: -107px;
+            right: -92px;
             width: 56%;
         }
         @include media-breakpoint-down(md) {

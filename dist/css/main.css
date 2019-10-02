@@ -7679,6 +7679,18 @@ th {
     .section-gap-bottom {
       padding-bottom: 60px; } }
 
+.section-gap-bottom2 {
+  padding-bottom: 100px; }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .section-gap-bottom2 {
+      padding-bottom: 0px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .section-gap-bottom2 {
+      padding-bottom: 0px; } }
+  @media (max-width: 767.98px) {
+    .section-gap-bottom2 {
+      padding-bottom: 60px; } }
+
 .section-gap-top {
   padding-top: 100px; }
   @media (max-width: 767.98px) {
@@ -8345,7 +8357,7 @@ svg {
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .right-img {
       right: 0;
-      top: 1744px;
+      top: 1923px;
       width: 184px;
       height: 654px; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -8437,7 +8449,7 @@ svg {
     transform: rotate(-22deg); }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .features-area:nth-child(2)::after {
-        right: -107px;
+        right: -92px;
         width: 56%; } }
     @media (max-width: 991.98px) {
       .features-area:nth-child(2)::after {
@@ -8602,9 +8614,9 @@ svg {
         top: -77px; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .transection-area__left-img {
-        width: 127px;
+        width: 142px;
         left: 0;
-        height: 483px;
+        height: 597px;
         top: -65px; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
       .transection-area__left-img {
@@ -8765,6 +8777,9 @@ svg {
     margin-top: 100px;
     padding-top: 60px;
     color: #99abb8; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .process-area__left {
+        padding-top: 0px; } }
     @media (max-width: 767.98px) {
       .process-area__left {
         margin-top: 0px;
@@ -9101,7 +9116,7 @@ svg {
   @media (min-width: 768px) and (max-width: 991.98px) {
     .bottom__text {
       padding-top: 18px;
-      margin-bottom: 0px; } }
+      margin-bottom: 12px; } }
   @media (max-width: 767.98px) {
     .bottom__text {
       padding: 13px 19px;
