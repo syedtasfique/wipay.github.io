@@ -6,6 +6,13 @@
     }
 }
 
+.section-gap-bottom-sm {
+    padding-bottom: 0px;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 60px;
+    }
+}
+
 .section-gap-bottom2 {
     padding-bottom: 100px;
     @include media-breakpoint-only(lg) {

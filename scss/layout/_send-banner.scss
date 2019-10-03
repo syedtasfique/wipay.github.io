@@ -1,22 +1,22 @@
 .send-banner-area {
-    height: 700px;
-    background: url('../../img/send_banner/banner-1050629__340.jpg') no-repeat center;
+    height: 500px;
+    background: url('../../img/send_money/send_banner/banner-1050629__340.jpg') no-repeat center;
     background-size: cover;
     &__content {
         text-align: center;
     }
     &__title {
         color: $white-color;
-        font-size: 50px;
+        @include media-breakpoint-down(sm) {
+            font-size: 35px;
+        }
     }
     &__text {
         color: $white-color;
         font-size: 20px;
         letter-spacing: 1.5px;
     }
-    &__buttons {
-        margin-bottom: 50px;
-    }
+    &__buttons {}
     &__slide-icon {
         color: $white-color;
         font-size: 40px !important;

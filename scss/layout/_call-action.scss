@@ -1,0 +1,23 @@
+.call-action {
+    background-attachment: fixed;
+    height: 500px;
+    // background-image: url("../../img/send_money/PactSafe-clickwrap-background.webp");
+    background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
+    text-align: center;
+    &__apple {}
+    &__title {
+        color: $white-color;
+        text-transform: capitalize;
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }
+    &__text {
+        color: $white-color;
+        text-align: center;
+        @include media-breakpoint-only(md) {
+            max-width: 700px;
+        }
+        @include media-breakpoint-down(sm) {}
+    }
+}

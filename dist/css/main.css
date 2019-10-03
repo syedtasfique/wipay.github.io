@@ -7679,6 +7679,12 @@ th {
     .section-gap-bottom {
       padding-bottom: 60px; } }
 
+.section-gap-bottom-sm {
+  padding-bottom: 0px; }
+  @media (max-width: 767.98px) {
+    .section-gap-bottom-sm {
+      padding-bottom: 60px; } }
+
 .section-gap-bottom2 {
   padding-bottom: 100px; }
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -9153,22 +9159,40 @@ svg {
       bottom: 50px; } }
 
 .send-banner-area {
-  height: 700px;
-  background: url("../../img/send_banner/banner-1050629__340.jpg") no-repeat center;
+  height: 500px;
+  background: url("../../img/send_money/send_banner/banner-1050629__340.jpg") no-repeat center;
   background-size: cover; }
   .send-banner-area__content {
     text-align: center; }
   .send-banner-area__title {
-    color: #ffffff;
-    font-size: 50px; }
+    color: #ffffff; }
+    @media (max-width: 767.98px) {
+      .send-banner-area__title {
+        font-size: 35px; } }
   .send-banner-area__text {
     color: #ffffff;
     font-size: 20px;
     letter-spacing: 1.5px; }
-  .send-banner-area__buttons {
-    margin-bottom: 50px; }
   .send-banner-area__slide-icon {
     color: #ffffff;
     font-size: 40px !important; }
+
+.call-action {
+  background-attachment: fixed;
+  height: 500px;
+  background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
+  text-align: center; }
+  .call-action__title {
+    color: #ffffff;
+    text-transform: capitalize; }
+    @media (max-width: 767.98px) {
+      .call-action__title {
+        font-size: 20px; } }
+  .call-action__text {
+    color: #ffffff;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .call-action__text {
+        max-width: 700px; } }
 
 /*# sourceMappingURL=main.css.map */
