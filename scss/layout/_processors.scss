@@ -32,9 +32,17 @@
     // height: 721px;
     // padding-bottom: 100px;
     &__left {
-        margin-top: 100px;
-        padding-top: 60px;
+        margin-top: 30px;
+        padding-top: 0px;
         color: #99abb8;
+        @include breakpoint($min: 1200px, $max: 1599px) {
+            padding-top: 0px;
+            margin-top: 30px;
+        }
+        @include media-breakpoint-only(lg) {
+            padding-top: 0px;
+            margin-top: 30px;
+        }
         @include media-breakpoint-only(md) {
             padding-top: 0px;
             margin-top: 30px;
@@ -54,6 +62,7 @@
     &__icon {
         color: $primary-color3 !important;
         display: table;
+        // border: 5px solid #f6f6fa;
         background: $white-color;
         transform: skew(-15deg);
         border-radius: 0px 100px 50px 0px !important;
@@ -73,6 +82,7 @@
             position: absolute;
             top: 15px;
             left: 15px;
+            border: 5px solid #f6f6fa;
             background: $white-color;
             transform: skew(-1deg);
             border-radius: 0px 100px 50px 0px !important;
@@ -89,7 +99,7 @@
     }
     &__content {
         padding-left: 182px;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
         padding-top: 100px;
         @include media-breakpoint-only(md) {
             padding-left: 20px;
@@ -109,16 +119,16 @@
         // right: -90px;
         border-radius: 300px 0px 0px 300px !important;
         width: auto;
-        height: 710px;
+        height: 606px;
         background: $white-color;
         @include breakpoint($min: 1200px, $max: 1599px) {
-            height: 725px;
+            height: 612px;
         }
         @include media-breakpoint-only(md) {
             // height: 653px;
         }
         @include media-breakpoint-only(lg) {
-            height: 797px;
+            height: 670px;
         }
         @include media-breakpoint-down(sm) {
             position: relative;
@@ -205,7 +215,7 @@
     }
     &--img4 {
         top: 250px;
-        left: -80px;
+        left: -167px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 225px;
             left: -350px;
@@ -248,15 +258,15 @@
     //     left: 500px;
     // }
     &--img7 {
-        top: 565px;
-        left: 104px;
+        top: 495px;
+        left: 183px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 509px;
             left: 192px;
         }
         @include media-breakpoint-only(lg) {
-            top: 628px;
-            left: -62px;
+            top: 542px;
+            left: -22px;
         }
         @include media-breakpoint-only(md) {
             top: 394px;
@@ -289,7 +299,7 @@
     }
     &--img9 {
         top: 381px;
-        left: 316px;
+        left: 266px;
         @include breakpoint($min: 1200px, $max: 1599px) {
             top: 366px;
             left: 370px;

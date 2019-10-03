@@ -254,33 +254,33 @@
     &.btn-lightBlue {
         color: #fff;
         background-color: $btn_lightBlue;
-        &--login {
-            &:hover {
-                background-color: lighten($btn_lightBlue, 8%);
-                color: #ffffff;
-            }
-            @include media-breakpoint-down(sm) {
-                background-color: #4b75fa;
-                color: #ffffff;
-                &:hover {
-                    background-color: lighten($btn_lightBlue, 8%);
-                    color: #ffffff;
-                }
-            }
-        }
-        &--registration {
-            &:hover {
-                background-color: lighten($btn_lightBlue, 8%);
-                color: #ffffff;
-            }
-            @include media-breakpoint-down(sm) {
-                background-color: #4b75fa;
-                &:hover {
-                    background-color: lighten($btn_lightBlue, 8%);
-                    color: #ffffff;
-                }
-            }
-        }
+        // &--login {
+        //     &:hover {
+        //         background-color: lighten($btn_lightBlue, 8%);
+        //         color: #ffffff;
+        //     }
+        //     @include media-breakpoint-down(sm) {
+        //         background-color: #4b75fa;
+        //         color: #ffffff;
+        //         &:hover {
+        //             background-color: lighten($btn_lightBlue, 8%);
+        //             color: #ffffff;
+        //         }
+        //     }
+        // }
+        // &--registration {
+        //     &:hover {
+        //         background-color: lighten($btn_lightBlue, 8%);
+        //         color: #ffffff;
+        //     }
+        //     @include media-breakpoint-down(sm) {
+        //         background-color: #4b75fa;
+        //         &:hover {
+        //             background-color: lighten($btn_lightBlue, 8%);
+        //             color: #ffffff;
+        //         }
+        //     }
+        // }
         &:hover {
             background-color: lighten($btn_lightBlue, 8%);
         }

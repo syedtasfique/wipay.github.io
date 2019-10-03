@@ -52,15 +52,15 @@
     right: 0;
     @include breakpoint($min: 1200px, $max: 1599px) {
         right: 0;
-        top: 1819px;
+        top: 1980px;
         width: 210px;
-        height: 841px;
+        height: 788px;
     }
     @include media-breakpoint-only(lg) {
         right: 0;
-        top: 1923px;
-        width: 184px;
-        height: 654px;
+        top: 1689px;
+        width: 170px;
+        height: 619px;
     }
     @include media-breakpoint-only(md) {
         right: 0;

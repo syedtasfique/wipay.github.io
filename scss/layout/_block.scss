@@ -21,6 +21,9 @@
         color: $title-color;
         line-height: 28px;
         margin-top: 30px;
+        @include media-breakpoint-down(lg) {
+            font-size: 20px;
+        }
     }
     &__text {
         color: $text-color;
@@ -34,4 +37,4 @@
 // }
 // html{
 //   position: relative;
-// }
+//}
