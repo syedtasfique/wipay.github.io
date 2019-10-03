@@ -2,7 +2,7 @@
 @import "partial/mixin";
 @import "partial/reset";
 @import "partial/predefined";
-// Include Layouts
+// Include index Layouts
 @import "layout/navbar";
 @import "layout/banner";
 @import "layout/payment";
@@ -16,3 +16,5 @@
 @import "layout/fixed";
 @import "layout/processors";
 @import "layout/footer";
+// include send layouts
+@import "layout/send-banner";

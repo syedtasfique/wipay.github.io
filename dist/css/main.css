@@ -9152,4 +9152,23 @@ svg {
     .go-to-top {
       bottom: 50px; } }
 
+.send-banner-area {
+  height: 700px;
+  background: url("../../img/send_banner/banner-1050629__340.jpg") no-repeat center;
+  background-size: cover; }
+  .send-banner-area__content {
+    text-align: center; }
+  .send-banner-area__title {
+    color: #ffffff;
+    font-size: 50px; }
+  .send-banner-area__text {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1.5px; }
+  .send-banner-area__buttons {
+    margin-bottom: 50px; }
+  .send-banner-area__slide-icon {
+    color: #ffffff;
+    font-size: 40px !important; }
+
 /*# sourceMappingURL=main.css.map */
