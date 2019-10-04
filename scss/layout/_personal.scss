@@ -22,3 +22,35 @@
         // max-width: 460px;
     }
 }
+
+
+//send image
+
+.send-right-img{
+    position: absolute;
+    top: 865px;
+    right: 0;
+    width: 364px;
+    height: 1373px;
+    @include breakpoint($min: 1200px, $max: 1599px) {
+        right: 0;
+    top: 1480px;
+    width: 176px;
+    height: 846px;
+    }
+    @include media-breakpoint-only(lg) {
+        right: 0;
+        top: 1689px;
+        width: 170px;
+        height: 619px;
+    }
+    @include media-breakpoint-only(md) {
+        right: 0;
+        top: 2042px;
+        width: 114px;
+        height: 469px;
+    }
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}

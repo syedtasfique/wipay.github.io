@@ -11062,6 +11062,43 @@ svg__hover :not(svg) {
   }
 }
 
+.send-right-img {
+  position: absolute;
+  top: 865px;
+  right: 0;
+  width: 364px;
+  height: 1373px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .send-right-img {
+    right: 0;
+    top: 1480px;
+    width: 176px;
+    height: 846px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .send-right-img {
+    right: 0;
+    top: 1689px;
+    width: 170px;
+    height: 619px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .send-right-img {
+    right: 0;
+    top: 2042px;
+    width: 114px;
+    height: 469px;
+  }
+}
+@media (max-width: 767.98px) {
+  .send-right-img {
+    display: none;
+  }
+}
+
 .merchant-area {
   padding-top: 100px;
 }
