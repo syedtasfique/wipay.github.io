@@ -21,4 +21,13 @@
         color: $white-color;
         font-size: 40px !important;
     }
+
+    //request section
+    &__text2{
+        margin-top: 20px;
+        color: $white-color;
+    }
+    &__sm-link{
+        color: $yellow-color;
+    }
 }
