@@ -11744,7 +11744,7 @@ svg__hover :not(svg) {
 }
 @media (max-width: 767.98px) {
   .send-req-footer {
-    margin-top: 0px;
+    margin-top: 60px;
   }
 }
 

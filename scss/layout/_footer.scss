@@ -146,6 +146,6 @@
 .send-req-footer{
     margin-top: 150px;
     @include media-breakpoint-down(sm){
-        margin-top: 0px;
+        margin-top: 60px;
     }
 }
