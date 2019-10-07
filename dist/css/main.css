@@ -10679,9 +10679,18 @@ svg__hover :not(svg) {
 .features-area__content {
   margin-bottom: 50px;
 }
-@media (min-width: 992px) {
+@media (max-width: 1199.98px) {
   .features-area__content {
     padding: 0px 20px;
+  }
+}
+.features-area__content2 {
+  margin-bottom: 50px;
+}
+@media (max-width: 1199.98px) {
+  .features-area__content2 {
+    padding: 0px 20px;
+    margin-bottom: 0px;
   }
 }
 .features-area__icon {
@@ -10774,12 +10783,23 @@ svg__hover :not(svg) {
 .single-feature__content {
   margin-bottom: 50px;
 }
-.features-content {
-  margin-bottom: 50px;
-}
 @media (max-width: 767.98px) {
-  .features-content {
-    margin-bottom: 0px;
+  .first-feature {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .middle-feature {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .last-feature {
+    margin-top: 20px;
   }
 }
 

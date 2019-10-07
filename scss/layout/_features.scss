@@ -1,10 +1,7 @@
 .features-area {
     position: relative;
     text-align: center;
-    // margin-bottom: 30px;
-    @include media-breakpoint-down(sm) {
-    }
-    &__title{
+    &__title {
         margin-bottom: 20px;
     }
     &--middle {
@@ -29,8 +26,15 @@
     }
     &__content {
         margin-bottom: 50px;
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-down(lg) {
             padding: 0px 20px;
+        }
+    }
+    &__content2 {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            padding: 0px 20px;
+            margin-bottom: 0px;
         }
     }
     &__icon {
@@ -125,10 +129,23 @@
     }
 }
 
+.first-feature {
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+}
 
-.features-content{
-    margin-bottom: 50px;
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 0px;
-        }
+.middle-feature {
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+}
+
+.last-feature {
+    @include media-breakpoint-down(sm) {
+        // margin-bottom: 40px;
+        margin-top: 20px;
+    }
 }
