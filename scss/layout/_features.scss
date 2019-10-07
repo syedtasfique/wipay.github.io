@@ -4,14 +4,6 @@
     &__title {
         margin-bottom: 20px;
     }
-    &--middle {
-        // margin-bottom: 30px;
-        margin-top: 40px;
-        text-align: center;
-        @include media-breakpoint-down(sm) {
-            margin-top: 0px;
-        }
-    }
     &__text {
         margin-bottom: 30px;
         @include media-breakpoint-down(sm) {
@@ -26,18 +18,26 @@
     }
     &__content {
         margin-bottom: 50px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-only(lg) {
             padding: 0px 20px;
         }
     }
     &__content2 {
         margin-bottom: 50px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-only(lg) {
             padding: 0px 20px;
             margin-bottom: 0px;
         }
     }
     &__icon {
+        &--middle {
+            // margin-bottom: 30px;
+            margin-top: 40px;
+            text-align: center;
+            @include media-breakpoint-down(sm) {
+                margin-top: 0px;
+            }
+        }
         font-size: 50px;
         display: inline-block;
         width: 150px;
@@ -100,15 +100,16 @@
     &::after {
         content: "";
         height: 1px;
-        top: 55px;
+        top: 77px;
         right: -142px;
         width: 71%;
         border: 1px dotted #eeeef0;
         position: absolute;
         transform: rotate(-22deg);
         @include media-breakpoint-only(lg) {
-            right: -92px;
-            width: 56%;
+            top: 76px;
+            right: -121px;
+            width: 67%;
         }
         @include media-breakpoint-down(md) {
             right: -55px;
@@ -122,7 +123,7 @@
 
 .single-feature {
     &__content {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
         @include media-breakpoint-down(sm) {
             // margin-bottom: 30px;
         }
