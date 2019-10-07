@@ -10690,7 +10690,9 @@ svg__hover :not(svg) {
 }
 @media (max-width: 767.98px) {
   .features-area__icon {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
   }
 }
 .features-area__title {
@@ -10760,13 +10762,13 @@ svg__hover :not(svg) {
 
 @media (max-width: 767.98px) {
   .first-feature {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767.98px) {
   .middle-feature {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-top: 30px;
   }
 }

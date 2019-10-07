@@ -40,7 +40,10 @@
         line-height: 110px;
       }
       @include media-breakpoint-down(sm) {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      width: 100px;
+      // text-align: center;
+      height: 100px;
       }
     }
     &__title {
@@ -105,13 +108,13 @@
 
   .first-feature{
     @include media-breakpoint-down(sm){
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
   }
 
   .middle-feature{
     @include media-breakpoint-down(sm){
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         margin-top: 30px;
       }
   }
