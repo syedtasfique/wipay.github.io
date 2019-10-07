@@ -14,24 +14,26 @@ new WOW().init();
 
 //scroll to top
 
-$("a[href='#top']").on('click', function() {
+$("a[href='#top']").on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
 });
 
-$(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
+$('.go-to-top').hide();
+$(window).on('scroll', function () {
+    var scrollToTop = $(window).scrollTop();
+    if (scrollToTop >= 100) {
         $('.go-to-top').show();
     } else {
         $('.go-to-top').hide();
     }
 });
 
+
 // type js
 
-var TxtRotate = function(el, toRotate, period) {
+var TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -41,7 +43,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -67,12 +69,12 @@ TxtRotate.prototype.tick = function() {
         delta = 500;
     }
 
-    setTimeout(function() {
+    setTimeout(function () {
         that.tick();
     }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
     var elements = document.getElementsByClassName('txt-rotate');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-rotate');
@@ -90,7 +92,7 @@ window.onload = function() {
 
 
 //lazy load image
-$('.image').on('load', function() {
+$('.image').on('load', function () {
     // $("div").removeClass("linear-background");
     console.log("image loaded");
 
@@ -108,17 +110,17 @@ $('.image').on('load', function() {
   GitHub: https://github.com/rkchauhan
   CodePen: https://codepen.io/rkchauhan
 -------------------------------------------------------- */
-$(document).ready(function() {
+$(document).ready(function () {
     $('.ripple-effect').rkmd_rippleEffect();
 });
 
-(function($) {
-    $.fn.rkmd_rippleEffect = function() {
+(function ($) {
+    $.fn.rkmd_rippleEffect = function () {
         var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
 
         btn = $(this).not('[disabled], .disabled');
 
-        btn.on('mousedown', function(e) {
+        btn.on('mousedown', function (e) {
             self = $(this);
 
             // Disable right click
@@ -142,7 +144,7 @@ $(document).ready(function() {
 
             ripple.css({ 'top': rippleY + 'px', 'left': rippleX + 'px' }).addClass('animated');
 
-            setTimeout(function() {
+            setTimeout(function () {
                 ripple.remove();
             }, 800);
 
@@ -159,7 +161,7 @@ $('.full-screen').css('height', window_height);
 
 //navbar collapse
 
-$('[data-toggle="slide-collapse"]').on('click', function() {
+$('[data-toggle="slide-collapse"]').on('click', function () {
     $navMenuCont = $($(this).data('target'));
     $navMenuCont.animate({
         'width': 'toggle'
@@ -167,11 +169,11 @@ $('[data-toggle="slide-collapse"]').on('click', function() {
 
 
 });
-$(".menu-overlay").click(function(event) {
+$(".menu-overlay").click(function (event) {
     $(".navbar-toggler").trigger("click");
     $(".menu-overlay").toggleClass('show');
     console.log("clicked");
 });
-$('.navbar-toggler, .menu-overlay').on('click', function() {
+$('.navbar-toggler, .menu-overlay').on('click', function () {
     $(".menu-overlay").toggleClass('show');
 });

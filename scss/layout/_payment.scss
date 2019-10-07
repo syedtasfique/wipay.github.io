@@ -41,7 +41,7 @@
 
 .platform_image {
     padding: 25px 20px;
-    background: rgb(243, 243, 243);
+    // background: rgb(243, 243, 243);
     @include media-breakpoint-only(sm) {
         margin-top: 30px;
     }

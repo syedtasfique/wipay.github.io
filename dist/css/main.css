@@ -10602,7 +10602,6 @@ svg__hover :not(svg) {
 
 .platform_image {
   padding: 25px 20px;
-  background: #f3f3f3;
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .platform_image {
@@ -11010,80 +11009,6 @@ svg__hover :not(svg) {
 @media (max-width: 767.98px) {
   .personal-area {
     padding-top: 0px;
-  }
-}
-
-.send-right-img {
-  position: absolute;
-  top: 865px;
-  right: 0;
-  width: 364px;
-  height: 1373px;
-}
-@media (min-width: 1200px) and (max-width: 1599px) {
-  .send-right-img {
-    right: 0;
-    top: 1480px;
-    width: 176px;
-    height: 846px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .send-right-img {
-    right: 0;
-    top: 1689px;
-    width: 170px;
-    height: 619px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .send-right-img {
-    right: 0;
-    top: 2042px;
-    width: 114px;
-    height: 469px;
-  }
-}
-@media (max-width: 767.98px) {
-  .send-right-img {
-    display: none;
-  }
-}
-
-.send-left-img {
-  position: absolute;
-  top: 865px;
-  left: 0;
-  width: 364px;
-  height: 1373px;
-}
-@media (min-width: 1200px) and (max-width: 1599px) {
-  .send-left-img {
-    right: 0;
-    top: 1653px;
-    width: 112px;
-    height: 525px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .send-left-img {
-    right: 0;
-    top: 1689px;
-    width: 170px;
-    height: 619px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .send-left-img {
-    right: 0;
-    top: 2042px;
-    width: 114px;
-    height: 469px;
-  }
-}
-@media (max-width: 767.98px) {
-  .send-left-img {
-    display: none;
   }
 }
 
@@ -11855,11 +11780,114 @@ svg__hover :not(svg) {
   color: #f5b52f;
 }
 
+.quick-send-area {
+  background: #f6f6f6;
+  padding-top: 0px;
+}
+@media (min-width: 992px) {
+  .quick-send-area__image {
+    max-width: 400px;
+  }
+}
+@media (max-width: 767.98px) {
+  .quick-send-area__image {
+    margin-bottom: 50px;
+    align-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .quick-send-area__content {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .quick-send-area {
+    padding-top: 0px;
+  }
+}
+
+.send-right-img {
+  position: absolute;
+  top: 865px;
+  right: 0;
+  width: 364px;
+  height: 1373px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .send-right-img {
+    right: 0;
+    top: 1480px;
+    width: 176px;
+    height: 846px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .send-right-img {
+    right: 0;
+    top: 1689px;
+    width: 170px;
+    height: 619px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .send-right-img {
+    right: 0;
+    top: 2042px;
+    width: 114px;
+    height: 469px;
+  }
+}
+@media (max-width: 767.98px) {
+  .send-right-img {
+    display: none;
+  }
+}
+
+.send-left-img {
+  position: absolute;
+  top: 865px;
+  left: 0;
+  width: 364px;
+  height: 1373px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .send-left-img {
+    right: 0;
+    top: 1653px;
+    width: 112px;
+    height: 525px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .send-left-img {
+    right: 0;
+    top: 1689px;
+    width: 170px;
+    height: 619px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .send-left-img {
+    right: 0;
+    top: 2042px;
+    width: 114px;
+    height: 469px;
+  }
+}
+@media (max-width: 767.98px) {
+  .send-left-img {
+    display: none;
+  }
+}
+
 .call-action {
   background-attachment: fixed;
   height: 600px;
   background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
   text-align: center;
+}
+.call-action__image {
+  transform: scale(1.2);
 }
 .call-action__btn {
   margin-bottom: 15px;

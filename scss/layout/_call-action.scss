@@ -4,6 +4,9 @@
     // background-image: url("../../img/send_money/PactSafe-clickwrap-background.webp");
     background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
     text-align: center;
+    &__image{
+        transform: scale(1.2);
+    }
     &__btn{
             margin-bottom: 15px;
             margin-right: 15px;;
