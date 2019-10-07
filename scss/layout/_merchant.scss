@@ -21,3 +21,10 @@
         // z-index: 100;
     }
 }
+
+.send-anywhere{
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+       margin-bottom: 0px;
+    }
+}

@@ -1,152 +1,124 @@
 .features-area {
     position: relative;
     text-align: center;
-    &__title {
+    &--middle {
+      margin-top: 40px;
+      text-align: center;
+      @include media-breakpoint-down(sm){
+        margin-top: 0px;
+      }
+    }
+    &__title{
         margin-bottom: 20px;
     }
-    &__text {
-        margin-bottom: 30px;
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 15px;
-        }
-    }
     &--right {
-        text-align: center;
-        @include media-breakpoint-down(sm) {
-            margin-top: 30px;
-        }
+      text-align: center;
     }
     &__content {
-        margin-bottom: 50px;
-        @include media-breakpoint-only(lg) {
-            padding: 0px 20px;
-        }
-    }
-    &__content2 {
-        margin-bottom: 50px;
-        @include media-breakpoint-only(lg) {
-            padding: 0px 20px;
-            margin-bottom: 0px;
-        }
+      padding: 0px 20px;
     }
     &__icon {
-        &--middle {
-            // margin-bottom: 30px;
-            margin-top: 40px;
-            text-align: center;
-            @include media-breakpoint-down(sm) {
-                margin-top: 0px;
-            }
-        }
-        font-size: 50px;
-        display: inline-block;
-        width: 150px;
-        text-align: center;
-        height: 150px;
-        line-height: 150px;
-        // transition: all 0.3s ease-in-out;
-        // padding: 42px 57px;
-        margin-bottom: 50px;
-        color: #f5b52f !important;
-        border-radius: 50%;
-        // box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
-        -webkit-box-shadow: $box-shadow;
-        -moz-box-shadow: $box-shadow;
-        box-shadow: $box-shadow;
-        @include media-breakpoint-down(md) {
-            // width: 110px;
-            // height: 110px;
-            // font-size: 40px;
-            // line-height: 110px;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 90px;
-            height: 90px;
-            line-height: 90;
-            margin-bottom: 10px;
-        }
+      font-size: 50px;
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      height: 150px;
+      line-height: 150px;
+      // transition: 0.3s ease-in-out all;
+      // padding: 42px 57px;
+      margin-bottom: 50px;
+      color: #f5b52f !important;
+      border-radius: 50%;
+      // box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+      -webkit-box-shadow: $box-shadow;
+      -moz-box-shadow: $box-shadow;
+      box-shadow: $box-shadow;
+      @include media-breakpoint-only(md) {
+        width: 110px;
+        height: 110px;
+        font-size: 40px;
+        line-height: 110px;
+      }
+      @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+      }
     }
-}
-
-.features-area:nth-child(1) {
+    &__title {
+      text-transform: capitalize;
+      font-size: 18px;
+      color: $dark;
+      @include media-breakpoint-down(md) {
+        text-transform: capitalize;
+        font-size: 18px;
+        color: $title-color;
+        // margin-top: 66px;
+        // margin-bottom: 30px;
+      }
+    }
+    &__text {
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
+    }
+  }
+  
+  .features-area:nth-child(1) {
     &::after {
-        content: "";
-        height: 1px;
-        top: 87px;
-        right: -123px;
-        width: 65%;
-        border: 1px dotted $border-color;
-        position: absolute;
-        transform: rotate(16deg);
-        @include media-breakpoint-only(lg) {
-            right: -96px;
-            width: 57%;
-        }
-        @include media-breakpoint-only(md) {
-            right: -51px;
-            width: 41%;
-        }
-        @include media-breakpoint-down(sm) {
-            content: none;
-        }
+      content: "";
+      height: 1px;
+      top: 87px;
+      right: -123px;
+      width: 65%;
+      border: 1px dotted $border-color;
+      position: absolute;
+      transform: rotate(16deg);
+      @include media-breakpoint-down(md) {
+        right: -72px;
+        width: 60%;
+      }
+      @include media-breakpoint-down(sm) {
+        content: none;
+      }
     }
-}
-
-.features-area:nth-child(2) {
+  }
+  
+  .features-area:nth-child(2) {
     margin-top: 30px;
-    @include media-breakpoint-down(sm) {
-        margin-top: 0px;
-    }
     &::after {
-        content: "";
-        height: 1px;
-        top: 77px;
-        right: -142px;
-        width: 71%;
-        border: 1px dotted #eeeef0;
-        position: absolute;
-        transform: rotate(-22deg);
-        @include media-breakpoint-only(lg) {
-            top: 76px;
-            right: -121px;
-            width: 67%;
-        }
-        @include media-breakpoint-down(md) {
-            right: -55px;
-            width: 43%;
-        }
-        @include media-breakpoint-down(sm) {
-            content: none;
-        }
+      content: "";
+      height: 1px;
+      top: 55px;
+      right: -142px;
+      width: 71%;
+      border: 1px dotted #eeeef0;
+      position: absolute;
+      transform: rotate(-22deg);
+      @include media-breakpoint-down(md) {
+        right: -66px;
+        width: 60%;
+      }
+      @include media-breakpoint-down(sm) {
+        content: none;
+      }
     }
-}
+  }
 
-.single-feature {
-    &__content {
-        // margin-bottom: 50px;
-        @include media-breakpoint-down(sm) {
-            // margin-bottom: 30px;
-        }
-    }
-}
-
-.first-feature {
-    @include media-breakpoint-down(sm) {
+  .first-feature{
+    @include media-breakpoint-down(sm){
         margin-bottom: 40px;
-        margin-top: 20px;
-    }
-}
+      }
+  }
 
-.middle-feature {
-    @include media-breakpoint-down(sm) {
+  .middle-feature{
+    @include media-breakpoint-down(sm){
         margin-bottom: 40px;
-        margin-top: 20px;
-    }
-}
+        margin-top: 30px;
+      }
+  }
 
-.last-feature {
-    @include media-breakpoint-down(sm) {
-        // margin-bottom: 40px;
-        margin-top: 20px;
-    }
-}
+  .last-feature{
+    @include media-breakpoint-down(sm){
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+  }

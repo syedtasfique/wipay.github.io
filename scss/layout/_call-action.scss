@@ -1,6 +1,6 @@
 .call-action {
     background-attachment: fixed;
-    height: 600px;
+    height: 500px;
     // background-image: url("../../img/send_money/PactSafe-clickwrap-background.webp");
     background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
     text-align: center;
@@ -8,7 +8,7 @@
         height: 360px; 
     }
     &__image{
-        transform: scale(1.2);
+        transform: scale(1.6);
     }
     &__btn{
             margin-bottom: 15px;

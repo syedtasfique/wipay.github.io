@@ -10648,41 +10648,23 @@ svg__hover :not(svg) {
   position: relative;
   text-align: center;
 }
-.features-area__title {
-  margin-bottom: 20px;
-}
-.features-area__text {
-  margin-bottom: 30px;
+.features-area--middle {
+  margin-top: 40px;
+  text-align: center;
 }
 @media (max-width: 767.98px) {
-  .features-area__text {
-    margin-bottom: 15px;
+  .features-area--middle {
+    margin-top: 0px;
   }
+}
+.features-area__title {
+  margin-bottom: 20px;
 }
 .features-area--right {
   text-align: center;
 }
-@media (max-width: 767.98px) {
-  .features-area--right {
-    margin-top: 30px;
-  }
-}
 .features-area__content {
-  margin-bottom: 50px;
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .features-area__content {
-    padding: 0px 20px;
-  }
-}
-.features-area__content2 {
-  margin-bottom: 50px;
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .features-area__content2 {
-    padding: 0px 20px;
-    margin-bottom: 0px;
-  }
+  padding: 0px 20px;
 }
 .features-area__icon {
   font-size: 50px;
@@ -10698,21 +10680,34 @@ svg__hover :not(svg) {
   -moz-box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212);
   box-shadow: 7px 7px 150px 27px rgba(206, 223, 219, 0.212);
 }
-.features-area__icon--middle {
-  margin-top: 40px;
-  text-align: center;
-}
-@media (max-width: 767.98px) {
-  .features-area__icon--middle {
-    margin-top: 0px;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .features-area__icon {
+    width: 110px;
+    height: 110px;
+    font-size: 40px;
+    line-height: 110px;
   }
 }
 @media (max-width: 767.98px) {
   .features-area__icon {
-    width: 90px;
-    height: 90px;
-    line-height: 90;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+}
+.features-area__title {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #181414;
+}
+@media (max-width: 991.98px) {
+  .features-area__title {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #222;
+  }
+}
+@media (max-width: 991.98px) {
+  .features-area__text {
+    font-size: 13px;
   }
 }
 
@@ -10726,16 +10721,10 @@ svg__hover :not(svg) {
   position: absolute;
   transform: rotate(16deg);
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .features-area:nth-child(1)::after {
-    right: -96px;
-    width: 57%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .features-area:nth-child(1)::after {
-    right: -51px;
-    width: 41%;
+    right: -72px;
+    width: 60%;
   }
 }
 @media (max-width: 767.98px) {
@@ -10747,32 +10736,20 @@ svg__hover :not(svg) {
 .features-area:nth-child(2) {
   margin-top: 30px;
 }
-@media (max-width: 767.98px) {
-  .features-area:nth-child(2) {
-    margin-top: 0px;
-  }
-}
 .features-area:nth-child(2)::after {
   content: "";
   height: 1px;
-  top: 77px;
+  top: 55px;
   right: -142px;
   width: 71%;
   border: 1px dotted #eeeef0;
   position: absolute;
   transform: rotate(-22deg);
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .features-area:nth-child(2)::after {
-    top: 76px;
-    right: -121px;
-    width: 67%;
-  }
-}
 @media (max-width: 991.98px) {
   .features-area:nth-child(2)::after {
-    right: -55px;
-    width: 43%;
+    right: -66px;
+    width: 60%;
   }
 }
 @media (max-width: 767.98px) {
@@ -10784,20 +10761,20 @@ svg__hover :not(svg) {
 @media (max-width: 767.98px) {
   .first-feature {
     margin-bottom: 40px;
-    margin-top: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
   .middle-feature {
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 767.98px) {
   .last-feature {
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 30px;
   }
 }
 
@@ -11072,6 +11049,15 @@ svg__hover :not(svg) {
   .merchant-area__content {
     text-align: center;
     order: 2;
+  }
+}
+
+.send-anywhere {
+  margin-bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .send-anywhere {
+    margin-bottom: 0px;
   }
 }
 
@@ -11753,9 +11739,18 @@ svg__hover :not(svg) {
   }
 }
 
+.send-req-footer {
+  margin-top: 150px;
+}
+@media (max-width: 767.98px) {
+  .send-req-footer {
+    margin-top: 0px;
+  }
+}
+
 .send-banner-area {
   height: 600px;
-  background: linear-gradient(0deg, #040404ad, #040404ad), url(../../img/send_money/send_banner/banner1.jpg) no-repeat center;
+  background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/send_banner/banner1.jpg) no-repeat center;
   background-size: cover;
 }
 .send-banner-area__content {
@@ -11789,7 +11784,7 @@ svg__hover :not(svg) {
 
 .request-banner-area {
   height: 600px;
-  background: linear-gradient(0deg, #040404ad, #040404ad), url(../../img/send_money/request-banner.jpg) no-repeat center;
+  background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/request-banner.jpg) no-repeat center;
   background-size: cover;
 }
 .request-banner-area__content {
@@ -11918,7 +11913,7 @@ svg__hover :not(svg) {
 
 .call-action {
   background-attachment: fixed;
-  height: 600px;
+  height: 500px;
   background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
   text-align: center;
 }
@@ -11928,7 +11923,7 @@ svg__hover :not(svg) {
   }
 }
 .call-action__image {
-  transform: scale(1.2);
+  transform: scale(1.6);
 }
 .call-action__btn {
   margin-bottom: 15px;
