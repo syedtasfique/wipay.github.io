@@ -10676,6 +10676,9 @@ svg__hover :not(svg) {
     margin-top: 30px;
   }
 }
+.features-area__content {
+  margin-bottom: 50px;
+}
 @media (min-width: 992px) {
   .features-area__content {
     padding: 0px 20px;
@@ -10735,6 +10738,11 @@ svg__hover :not(svg) {
 .features-area:nth-child(2) {
   margin-top: 30px;
 }
+@media (max-width: 767.98px) {
+  .features-area:nth-child(2) {
+    margin-top: 0px;
+  }
+}
 .features-area:nth-child(2)::after {
   content: "";
   height: 1px;
@@ -10760,6 +10768,18 @@ svg__hover :not(svg) {
 @media (max-width: 767.98px) {
   .features-area:nth-child(2)::after {
     content: none;
+  }
+}
+
+.single-feature__content {
+  margin-bottom: 50px;
+}
+.features-content {
+  margin-bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .features-content {
+    margin-bottom: 0px;
   }
 }
 
@@ -11009,7 +11029,7 @@ svg__hover :not(svg) {
 }
 @media (max-width: 767.98px) {
   .personal-area {
-    padding-top: 0px;
+    padding-top: 60px;
   }
 }
 
@@ -11800,7 +11820,7 @@ svg__hover :not(svg) {
 }
 @media (max-width: 767.98px) {
   .quick-send-area {
-    padding-top: 0px;
+    padding-top: 60px;
   }
 }
 
@@ -11883,6 +11903,11 @@ svg__hover :not(svg) {
   height: 600px;
   background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .call-action {
+    height: 360px;
+  }
 }
 .call-action__image {
   transform: scale(1.2);
