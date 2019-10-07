@@ -9822,6 +9822,7 @@ th {
   text-align: center !important;
   color: #777;
   margin-bottom: 40px;
+  max-width: 500px;
 }
 @media (max-width: 767.98px) {
   .text-center {
@@ -11733,6 +11734,7 @@ svg__hover :not(svg) {
 .send-banner-area__text {
   color: #ffffff;
   font-size: 20px;
+  padding-bottom: 30px;
   letter-spacing: 1.5px;
 }
 .send-banner-area__slide-icon {
@@ -11766,15 +11768,12 @@ svg__hover :not(svg) {
 .request-banner-area__text {
   color: #ffffff;
   font-size: 20px;
+  padding-bottom: 30px;
   letter-spacing: 1.5px;
 }
 .request-banner-area__slide-icon {
   color: #ffffff;
   font-size: 40px !important;
-}
-.request-banner-area__text2 {
-  margin-top: 20px;
-  color: #ffffff;
 }
 .request-banner-area__sm-link {
   color: #f5b52f;

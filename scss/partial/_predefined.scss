@@ -59,6 +59,7 @@
     text-align: center !important;
     color: $text-color;
     margin-bottom: 40px;
+    max-width: 500px;
     @include media-breakpoint-down(sm) {
         text-align: center;
     }
