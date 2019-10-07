@@ -1,6 +1,6 @@
 .quick-send-area {
     background: #f6f6f6;
-    padding-top: 0px;
+    // padding-top: 0px;
     &__image {
         @include media-breakpoint-up(lg) {
             max-width: 400px;
