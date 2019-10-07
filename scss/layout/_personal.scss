@@ -1,9 +1,5 @@
 .personal-area {
     background: #f6f6f6;
-    padding-top: 100px;
-    @include media-breakpoint-down(sm) {
-        padding-top: 30px;
-    }
     &__image {
         @include media-breakpoint-up(lg) {
             max-width: 400px;
@@ -21,6 +17,9 @@
         // z-index: 100;
         // max-width: 460px;
     }
+    @include media-breakpoint-down(sm) {
+       padding-top: 0px;
+    }
 }
 
 
@@ -37,6 +36,35 @@
     top: 1480px;
     width: 176px;
     height: 846px;
+    }
+    @include media-breakpoint-only(lg) {
+        right: 0;
+        top: 1689px;
+        width: 170px;
+        height: 619px;
+    }
+    @include media-breakpoint-only(md) {
+        right: 0;
+        top: 2042px;
+        width: 114px;
+        height: 469px;
+    }
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.send-left-img{
+    position: absolute;
+    top: 865px;
+    left: 0;
+    width: 364px;
+    height: 1373px;
+    @include breakpoint($min: 1200px, $max: 1599px) {
+        right: 0;
+        top: 1653px;
+        width: 112px;
+        height: 525px;
     }
     @include media-breakpoint-only(lg) {
         right: 0;

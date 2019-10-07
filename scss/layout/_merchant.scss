@@ -1,5 +1,4 @@
 .merchant-area {
-    padding-top: 100px;
     @include media-breakpoint-down(sm) {
         padding-top: 20px;
     }
@@ -10,6 +9,7 @@
         @include media-breakpoint-down(sm) {
             margin-top: 30px;
             order: 1;
+            margin-bottom: 20px;
         }
     }
     &__content {

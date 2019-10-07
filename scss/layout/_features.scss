@@ -2,7 +2,6 @@
     position: relative;
     text-align: center;
     @include media-breakpoint-down(sm) {
-        margin-top: 30px;
     }
     &__title{
         margin-bottom: 20px;

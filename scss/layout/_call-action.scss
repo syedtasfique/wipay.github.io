@@ -24,13 +24,16 @@
         @include media-breakpoint-down(sm) {}
     }
     &__text2{
+        color: $white-color;
+        // font-size: 8px;
         margin-bottom: 0px;
         @include media-breakpoint-down(sm){
             // margin-bottom: 15px;
         }
     }
     &__title2{
-        font-size: 12px;
+        color: $white-color;
+        font-size: 14px;
         font-weight: 900;
         @include media-breakpoint-down(sm) {
             font-size: 10px;
