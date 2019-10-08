@@ -11840,6 +11840,12 @@ svg__hover :not(svg) {
 @media (min-width: 992px) {
   .quick-send-area__image {
     max-width: 300px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .quick-send-area__image {
+    max-width: 300px;
   }
 }
 @media (max-width: 767.98px) {
