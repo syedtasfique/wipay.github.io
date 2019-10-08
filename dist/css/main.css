@@ -10723,10 +10723,18 @@ svg__hover :not(svg) {
   position: absolute;
   transform: rotate(16deg);
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .features-area:nth-child(1)::after {
+    top: 80px;
+    right: -89px;
+    width: 56%;
+  }
+}
 @media (max-width: 991.98px) {
   .features-area:nth-child(1)::after {
-    right: -72px;
-    width: 60%;
+    top: 80px;
+    right: -86px;
+    width: 63%;
   }
 }
 @media (max-width: 767.98px) {
@@ -10748,7 +10756,14 @@ svg__hover :not(svg) {
   position: absolute;
   transform: rotate(-22deg);
 }
-@media (max-width: 991.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .features-area:nth-child(2)::after {
+    top: 57px;
+    right: -94px;
+    width: 59%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
   .features-area:nth-child(2)::after {
     right: -66px;
     width: 60%;
@@ -11819,7 +11834,7 @@ svg__hover :not(svg) {
 }
 @media (min-width: 992px) {
   .quick-send-area__image {
-    max-width: 400px;
+    max-width: 300px;
   }
 }
 @media (max-width: 767.98px) {
@@ -11927,6 +11942,11 @@ svg__hover :not(svg) {
 .call-action__image {
   transform: scale(1.6);
 }
+@media (max-width: 1199.98px) {
+  .call-action__image {
+    transform: scale(1.9);
+  }
+}
 .call-action__btn {
   margin-bottom: 15px;
   margin-right: 15px;
@@ -11951,11 +11971,12 @@ svg__hover :not(svg) {
 }
 .call-action__text2 {
   color: #ffffff;
+  font-size: 8px;
   margin-bottom: 0px;
 }
 .call-action__title2 {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 8px;
   font-weight: 900;
 }
 @media (max-width: 767.98px) {

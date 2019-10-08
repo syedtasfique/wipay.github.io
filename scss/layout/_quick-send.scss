@@ -3,7 +3,7 @@
     // padding-top: 0px;
     &__image {
         @include media-breakpoint-up(lg) {
-            max-width: 400px;
+            max-width: 300px;
         }
         @include media-breakpoint-down(sm) {
             margin-bottom: 50px;
@@ -19,14 +19,12 @@
         // max-width: 460px;
     }
     @include media-breakpoint-down(sm) {
-       padding-top: 60px;
+        padding-top: 60px;
     }
 }
 
-
 //send image
-
-.send-right-img{
+.send-right-img {
     position: absolute;
     top: 865px;
     right: 0;
@@ -34,9 +32,9 @@
     height: 1373px;
     @include breakpoint($min: 1200px, $max: 1599px) {
         right: 0;
-    top: 1480px;
-    width: 176px;
-    height: 846px;
+        top: 1480px;
+        width: 176px;
+        height: 846px;
     }
     @include media-breakpoint-only(lg) {
         right: 0;
@@ -55,7 +53,7 @@
     }
 }
 
-.send-left-img{
+.send-left-img {
     position: absolute;
     top: 865px;
     left: 0;
