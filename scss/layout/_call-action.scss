@@ -12,6 +12,9 @@
         @include media-breakpoint-down(lg) {
             transform: scale(1.9);
         }
+        @include media-breakpoint-down(md) {
+            transform: scale(2.5);
+        }
     }
     &__btn {
         margin-bottom: 15px;

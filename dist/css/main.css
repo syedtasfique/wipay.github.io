@@ -11947,6 +11947,11 @@ svg__hover :not(svg) {
     transform: scale(1.9);
   }
 }
+@media (max-width: 991.98px) {
+  .call-action__image {
+    transform: scale(2.5);
+  }
+}
 .call-action__btn {
   margin-bottom: 15px;
   margin-right: 15px;
