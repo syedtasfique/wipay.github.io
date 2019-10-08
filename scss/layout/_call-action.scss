@@ -1,54 +1,73 @@
-.call-action {
-    background-attachment: fixed;
-    height: 500px;
-    // background-image: url("../../img/send_money/PactSafe-clickwrap-background.webp");
-    background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
-    text-align: center;
-    @include media-breakpoint-down(sm) {
-        height: 360px;
-    }
-    &__image {
-        transform: scale(1.6);
-        @include media-breakpoint-down(lg) {
-            transform: scale(1.9);
-        }
-        @include media-breakpoint-down(md) {
-            transform: scale(2.5);
-        }
-    }
-    &__btn {
-        margin-bottom: 15px;
-        margin-right: 15px;
-    }
-    &__title {
-        color: $white-color;
-        text-transform: capitalize;
-        @include media-breakpoint-down(sm) {
-            font-size: 20px;
-        }
-    }
-    &__text {
-        color: $white-color;
+    .call-action {
+        background-attachment: fixed;
+        height: 500px;
+        // background-image: url("../../img/send_money/PactSafe-clickwrap-background.webp");
+        background: linear-gradient(0deg, rgba(76, 132, 255, 0.88), rgba(76, 132, 255, 0.88)), url(../../img/send_money/square-cash-app-bitcoin-768x512.jpg) no-repeat center;
         text-align: center;
-        @include media-breakpoint-only(md) {
-            max-width: 700px;
-        }
-        @include media-breakpoint-down(sm) {}
-    }
-    &__text2 {
-        color: $white-color;
-        font-size: 7px;
-        margin-bottom: 0px;
         @include media-breakpoint-down(sm) {
-            // margin-bottom: 15px;
+            height: 360px;
         }
-    }
-    &__title2 {
-        color: $white-color;
-        font-size: 7px;
-        font-weight: 900;
-        @include media-breakpoint-down(sm) {
+        &__image {
+            transform: scale(1.6);
+            @include media-breakpoint-down(lg) {
+                transform: scale(1.9);
+            }
+            @include media-breakpoint-down(md) {
+                transform: scale(2.5);
+            }
+        }
+        &__btn {
+            margin-bottom: 15px;
+            margin-right: 15px;
+        }
+        &__title {
+            color: $white-color;
+            text-transform: capitalize;
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+        }
+        &__logo {
+            // width: 100px;
+            // height: 100px;
+            max-width: 150px;
+            @include media-breakpoint-only(md) {
+                max-width: 170px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 140px;
+            }
+        }
+        &__logo2 {
+            // width: 100px;
+            // height: 100px;
+            max-width: 150px;
+            @include media-breakpoint-down(sm) {
+                max-width: 140px;
+            }
+        }
+        &__text {
+            color: $white-color;
+            text-align: center;
+            @include media-breakpoint-only(md) {
+                max-width: 700px;
+            }
+            @include media-breakpoint-down(sm) {}
+        }
+        &__text2 {
+            color: $white-color;
             font-size: 7px;
+            margin-bottom: 0px;
+            @include media-breakpoint-down(sm) {
+                // margin-bottom: 15px;
+            }
+        }
+        &__title2 {
+            color: $white-color;
+            font-size: 7px;
+            font-weight: 900;
+            @include media-breakpoint-down(sm) {
+                font-size: 7px;
+            }
         }
     }
-}
