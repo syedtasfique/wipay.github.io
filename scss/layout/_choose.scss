@@ -51,6 +51,7 @@
         }
         @include media-breakpoint-down(sm) {
             margin-bottom: 50px;
+            max-width: 400px;
         }
     }
     &__icon {

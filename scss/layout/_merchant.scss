@@ -9,6 +9,7 @@
         @include media-breakpoint-down(sm) {
             margin-top: 30px;
             order: 1;
+            max-width: 400px;
             margin-bottom: 20px;
         }
     }
@@ -22,9 +23,9 @@
     }
 }
 
-.send-anywhere{
+.send-anywhere {
     margin-bottom: 50px;
     @include media-breakpoint-down(sm) {
-       margin-bottom: 0px;
+        margin-bottom: 0px;
     }
 }

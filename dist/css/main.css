@@ -11059,6 +11059,7 @@ svg__hover :not(svg) {
   .merchant-area__image {
     margin-top: 30px;
     order: 1;
+    max-width: 400px;
     margin-bottom: 20px;
   }
 }
@@ -11180,6 +11181,7 @@ svg__hover :not(svg) {
 @media (max-width: 767.98px) {
   .choose-area__image {
     margin-bottom: 50px;
+    max-width: 400px;
   }
 }
 .choose-area__icon {
@@ -11832,6 +11834,9 @@ svg__hover :not(svg) {
 .quick-send-area {
   background: #f6f6f6;
 }
+.quick-send-area__image {
+  max-width: 300px;
+}
 @media (min-width: 992px) {
   .quick-send-area__image {
     max-width: 300px;
@@ -11840,6 +11845,8 @@ svg__hover :not(svg) {
 @media (max-width: 767.98px) {
   .quick-send-area__image {
     margin-bottom: 50px;
+    text-align: center;
+    max-width: 400px;
     align-content: center;
   }
 }

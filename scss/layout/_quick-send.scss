@@ -2,11 +2,14 @@
     background: #f6f6f6;
     // padding-top: 0px;
     &__image {
+        max-width: 300px;
         @include media-breakpoint-up(lg) {
             max-width: 300px;
         }
         @include media-breakpoint-down(sm) {
             margin-bottom: 50px;
+            text-align: center;
+            max-width: 400px;
             align-content: center;
         }
     }
