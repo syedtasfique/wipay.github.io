@@ -61,76 +61,6 @@ svg {
     }
 }
 
-// .center {
-//     height: 400px;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// span {
-//     font-family: $text-font;
-//     font-size: 42px;
-//     font-weight: 400;
-//     @include media-breakpoint-down(md) {
-//         font-size: 25px;
-//     }
-//     &.type {
-//         margin: 0 auto;
-//         width: 200px;
-//         margin-top: 100px;
-//         &::after {
-//             content: '|';
-//             display: inline;
-//             animation: blink 0.7s infinite;
-//         }
-//     }
-// }
-// /*Removes cursor that comes with typed.js*/
-// .typed-cursor {
-//     opacity: 0;
-//     display: none;
-// }
-// .second1 {
-//     font-size: 30px;
-//     @include media-breakpoint-down(md) {
-//         font-size: 16px;
-//     }
-// }
-// /*Custom cursor animation*/
-// @keyframes blink {
-//     0% {
-//         opacity: 1;
-//     }
-//     50% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
-// @-webkit-keyframes blink {
-//     0% {
-//         opacity: 1;
-//     }
-//     50% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
-// @-moz-keyframes blink {
-//     0% {
-//         opacity: 1;
-//     }
-//     50% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
 //animation fadeInUp
 @-webkit-keyframes fadeInUp {
     0% {
@@ -166,27 +96,27 @@ svg {
 }
 
 .animated1 {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.animated2 {
     -webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
     animation-duration: 2s;
 }
 
-.animated2 {
+.animated3 {
     -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
     animation-duration: 3s;
 }
 
-.animated3 {
+.animated4 {
     -webkit-animation-duration: 4s;
     -moz-animation-duration: 4s;
     animation-duration: 4s;
-}
-
-.animated4 {
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    animation-duration: 5s;
 }
 
 //animation fadeInRight

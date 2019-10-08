@@ -10519,27 +10519,27 @@ svg__hover :not(svg) {
 }
 
 .animated1 {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated2 {
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-.animated2 {
+.animated3 {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   animation-duration: 3s;
 }
 
-.animated3 {
+.animated4 {
   -webkit-animation-duration: 4s;
   -moz-animation-duration: 4s;
   animation-duration: 4s;
-}
-
-.animated4 {
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
-  animation-duration: 5s;
 }
 
 @keyframes fadeInRight {
