@@ -19,7 +19,7 @@
         margin-bottom: 30px;
     }
     &__sm-title {
-        font-weight: 100;
+        font-weight: 500;
         color: $white-color;
         color: rgb(254, 189, 0);
         @include media-breakpoint-down(md) {
@@ -143,9 +143,9 @@
     }
 }
 
-.send-req-footer{
+.send-req-footer {
     margin-top: 150px;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
         margin-top: 60px;
     }
 }

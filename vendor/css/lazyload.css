@@ -39,6 +39,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    /* align-items: flex-start; */
     /* padding: 2px 20px; */
     /* margin-bottom: 2em; */
     position: relative;

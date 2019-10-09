@@ -1,0 +1,30 @@
+.wipay {
+    background: $background-color;
+    &__single-block {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            // box-shadow: 10px 10px 10px #D5DBE3;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+        }
+    }
+    &__icon {
+        margin-right: 60px;
+        height: 40px;
+        padding-left: 10px;
+    }
+    &__text {
+        max-width: 600px;
+        font-size: 16px;
+        font-family: $text-font;
+        font-weight: 300;
+    }
+}
+
+.text-bold {
+    font-weight: 700;
+    color: $title-color;
+}
