@@ -11065,7 +11065,7 @@ svg__hover :not(svg) {
   .merchant-area__image {
     margin-top: 30px;
     order: 1;
-    max-width: 400px;
+    max-width: 300px;
     margin-bottom: 20px;
   }
 }
@@ -12044,7 +12044,7 @@ svg__hover :not(svg) {
   border-radius: 10px;
 }
 .wipay__icon {
-  margin-right: 60px;
+  margin-right: 10px;
   height: 40px;
   padding-left: 10px;
 }
