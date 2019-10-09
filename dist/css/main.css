@@ -11077,11 +11077,21 @@ svg__hover :not(svg) {
 }
 
 .send-anywhere {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 @media (max-width: 767.98px) {
   .send-anywhere {
     margin-bottom: 0px;
+  }
+}
+
+.effect_image {
+  padding: 25px 20px;
+  background: #f3f3f3;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .effect_image {
+    margin-top: 30px;
   }
 }
 
